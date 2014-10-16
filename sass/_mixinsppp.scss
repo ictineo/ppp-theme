@@ -1,0 +1,81 @@
+/*Mixins per la web de Pam a Pam*/
+
+//Include fonts
+@import "fonts";
+
+//Elements comuns amb nomenclatura full d'especificacions del disseny
+
+@mixin menu {
+  font-family: 'titlight';
+  color: $negro;
+  line-height: 22px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  &:hover,
+  &.active {
+    border-bottom: 4px solid $naranja;
+    padding-bottom: 2px;
+  }
+}
+@mixin h1 {
+  font-family: 'stencil';
+  line-height: 42px;
+  font-size: 40px;
+  font-weight: 400;
+}
+@mixin ombra {
+  @include text-shadow(rgba(0, 0, 0, 0.9) 0 2px 8px);
+}
+@mixin h2 {
+  font-family: 'titbold';
+  line-height: 32px;
+  font-size: 32px;
+}
+@mixin h3 { //Abel li diu h4
+  font-family: 'titthin';
+  line-height: 24px;
+  font-size: 18px;
+}
+@mixin doce {
+  font-family: 'titlight';
+  line-height: 16px;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+}
+@mixin blog1 {
+  font-family: 'titregular';
+  line-height: 20px;
+  font-size: 18px;
+}
+@mixin blog2 {
+  font-family: 'titthin';
+  line-height: 20px;
+  font-size: 13px;
+}
+@mixin blog3 {
+  font-family: 'titthin';
+  line-height: 18px;
+  font-size: 14px;
+}
+@mixin semi {
+  font-family: 'titsemibold';
+  line-height: 18px;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+}
+@mixin light {
+  font-family: 'titlight';
+  line-height: 18px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* Tipos variables */
+
+@mixin tititalic($font-size, $color, $line-height) {
+  font-family: 'tititalic';
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}

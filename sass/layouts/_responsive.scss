@@ -30,7 +30,12 @@ $zen-auto-include-item-base: false;
  * For screen sizes larger than 1200px, prevent excessively long lines of text
  * by setting a max-width.
  */
-#page,
+//#page,
+body.not-front #main,
+body.front #map-wrapper,
+body.front #content .contenidor,
+body.front #content .wrapper-blog,
+header,
 .region-bottom {
   margin-left: auto;
   margin-right: auto;
@@ -66,7 +71,7 @@ $zen-auto-include-item-base: false;
     /* Move the navbar up inside #main's padding. */
     position: absolute;
     top: 0;
-    height: $nav-height;
+    height:0;// $nav-height;
     width: $zen-grid-width;
   }
 }
@@ -156,7 +161,7 @@ $zen-auto-include-item-base: false;
  */
 @media all and (min-width: 960px) {
 
-  $zen-column-count: 5;
+  $zen-column-count: 12;
 
   /**
    * The layout when there is only one sidebar, the left one.

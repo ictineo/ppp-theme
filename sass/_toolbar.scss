@@ -1,0 +1,49 @@
+/* Estils genèrics toolbar per pàgines del front*/
+.logged-in {
+  #toolbar div.toolbar-menu ul li a:focus, #toolbar div.toolbar-menu ul li a:hover, #toolbar div.toolbar-menu ul li a:active, #toolbar div.toolbar-menu ul li a.active:focus {
+    background: none repeat scroll 0 0 $fondo;
+  }    
+  #toolbar div.toolbar-menu ul li a.active:hover, #toolbar div.toolbar-menu ul li a.active:active, #toolbar div.toolbar-menu ul li a.active, #toolbar div.toolbar-menu ul li.active-trail a {
+    background-image: none;
+    color: $gris;
+    text-shadow: 0 1px 0 $s_verde;
+  }
+  .region-page-top {
+    #toolbar {
+      a {
+        color: $negro;
+      }
+      .toolbar-menu {
+        background-color: $naranja;
+        ul li a {
+          &:hover {
+            background-color: $fondo;
+          }
+        }
+        #toolbar-home a span {
+          background-image: url("../images/xinxeta.png");
+          background-position: top;
+          width: 30px;
+          height: 30px;
+          margin-bottom: 0px;
+        }
+        ul#toolbar-home li.home a:hover {
+          background: transparent;
+        }
+        #toolbar-home a:hover span {
+          opacity: 0.9;
+        }
+      }
+      div.toolbar-shortcuts {
+        ul li a {
+          color: $fondo;
+        }
+        ul li a:hover {
+          background-color: $naranja;
+        }
+      }
+    }
+  }
+}
+
+

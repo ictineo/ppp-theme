@@ -13,7 +13,7 @@
 
 screenshot  = screenshot.png
 name        = Pam a Pam
-description = Especte grafic a mida per Pam a Pam
+description = Especte grafic a mida per Pam a Pam desenvolupat per Projecte Ictineo SCCL, disenyat per Abel Martin
 
 
 
@@ -85,11 +85,13 @@ stylesheets[all][] = css/styles.css
 ; And you'll use this variable in maintenance-page.tpl.php:
 ;   <?php print $header_top; ?>
 
+regions[pre_header]     = Pre Header
 regions[header]         = Header
 regions[navigation]     = Navigation bar
 regions[highlighted]    = Highlighted
 regions[help]           = Help
 regions[content]        = Content
+regions[content_front]  = Content Front
 regions[sidebar_first]  = First sidebar
 regions[sidebar_second] = Second sidebar
 regions[footer]         = Footer

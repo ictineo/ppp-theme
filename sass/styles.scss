@@ -19,6 +19,15 @@
 @import "components/misc";
 // Optionally, add your own components here.
 @import "print";
+//Fulls d'estil propis de Projecte Ictineo SCCL per Pam a Pam
+@import "fonts";
+@import "vars";
+@import "mixinsppp";
+@import "compass/css3";
+@import "general";
+@import "toolbar";
+@import "header";
+@import "home";
 
 /* SMACSS theme rules */
 /* @import "theme-A"; */

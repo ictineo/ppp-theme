@@ -1,0 +1,71 @@
+/* Home Pam a Pam */
+
+.front {
+  #main {
+    padding-top: 10px;
+    #content {
+      .messages--error.messages.error {
+        display: none;
+      }
+      .region-content-front { 
+        #block-ppp-mapes-ppp-mapes-mapahome {
+          //block carrousel i cercador
+          #header-slider-wrapper { 
+            overflow: hidden;
+            position: relative;
+            height: 400px;
+            text-align: center;
+            #header-cont-wrapper {
+              position: absolute;
+              z-index: 999;
+              width: 100%;
+              h2#search-title {
+                @include h1;
+                color: $naranja;
+                text-transform: uppercase;
+                @include ombra;
+              }
+              h3#search-subtitle {
+                color: $fondo;
+                @include ombra;
+              }
+              #views-exposed-form-punts-del-mapa-page-1 {
+                .views-exposed-form .views-exposed-widget {
+                  float: none;
+                  #edit-s1-wrapper {
+                  }
+                }
+                .views-exposed-widget.views-submit-button input {
+                  background-color: $naranja;
+                  width: 100px;
+                  height: 100px;
+                  @include border-radius(50px);
+                  color: $fondo;
+                  border: 0 none;
+                  @include h3;
+                  font-size: 22px;
+                }
+              }
+            }
+          }
+          #map-wrapper {
+            #tabs-wrapper .centred-tab {
+              @include semi;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+html.js input#edit-s1.form-autocomplete {//caixa cerca carrousel
+  background-image: none;
+  border: none 0;
+  height: 30px;
+  width: 800px;
+  border: 0 none;
+  @include box-shadow(black 0 0 3px);
+  @include border-radius(2px);
+  padding: 0 15px;
+  @include tititalic(15px, $gris, 16px);
+}
