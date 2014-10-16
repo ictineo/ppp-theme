@@ -16,42 +16,44 @@
 // To understand behaviors, see https://drupal.org/node/756722#behaviors
 Drupal.behaviors.ppp_blocs_portada = {
   attach: function(context, settings) {
-    jQuery('#content .dalt .bloc3 .view-ultims-comentaris.view-id-ultims_comentaris').hide();
-    jQuery('#content .dalt .bloc3 .view-portada-ultims-usuaris.view-id-portada_ultims_usuaris').hide();
-    //jQuery('#content .dalt .bloc3 .view-portada-ultims-punts.view-id-portada_ultims_punts').hide();
-    jQuery('#content .dalt .bloc3 .tabs .tab-pnts').addClass('active');
+    if(jQuery('body').hasClass('front')) {
+      jQuery('#content .dalt .bloc3 .view-ultims-comentaris.view-id-ultims_comentaris').hide();
+      jQuery('#content .dalt .bloc3 .view-portada-ultims-usuaris.view-id-portada_ultims_usuaris').hide();
+      //jQuery('#content .dalt .bloc3 .view-portada-ultims-punts.view-id-portada_ultims_punts').hide();
+      jQuery('#content .dalt .bloc3 .tabs .tab-pnts').addClass('active');
 
-    jQuery('#content .dalt .bloc3 .tabs .tab-pnts').click(function () {
-      jQuery('#content .dalt .bloc3 .view').each(function () {
-        jQuery(this).hide();
+      jQuery('#content .dalt .bloc3 .tabs .tab-pnts').click(function () {
+        jQuery('#content .dalt .bloc3 .view').each(function () {
+          jQuery(this).hide();
+        });
+        jQuery('#content .dalt .bloc3 .tabs .tab').each(function () {
+          jQuery(this).removeClass('active');
+        });
+        jQuery(this).addClass('active');
+        jQuery('#content .dalt .bloc3 .view-portada-ultims-punts.view-id-portada_ultims_punts').show();
       });
-      jQuery('#content .dalt .bloc3 .tabs .tab').each(function () {
-        jQuery(this).removeClass('active');
+      jQuery('#content .dalt .bloc3 .tabs .tab-comm').click(function () {
+        jQuery('#content .dalt .bloc3 .view').each(function () {
+          jQuery(this).hide();
+        });
+        jQuery('#content .dalt .bloc3 .tabs .tab').each(function () {
+          jQuery(this).removeClass('active');
+        });
+        jQuery(this).addClass('active');
+        jQuery('#content .dalt .bloc3 .view-ultims-comentaris.view-id-ultims_comentaris').show();
       });
-      jQuery(this).addClass('active');
-      jQuery('#content .dalt .bloc3 .view-ultims-comentaris.view-id-ultims_comentaris').show();
-    });
-    jQuery('#content .dalt .bloc3 .tabs .tab-comm').click(function () {
-      jQuery('#content .dalt .bloc3 .view').each(function () {
-        jQuery(this).hide();
-      });
-      jQuery('#content .dalt .bloc3 .tabs .tab').each(function () {
-        jQuery(this).removeClass('active');
-      });
-      jQuery(this).addClass('active');
-      jQuery('#content .dalt .bloc3 .view-portada-ultims-usuaris.view-id-portada_ultims_usuaris').show();
-    });
 
-    jQuery('#content .dalt .bloc3 .tabs .tab-usrs').click(function () {
-      jQuery('#content .dalt .bloc3 .view').each(function () {
-        jQuery(this).hide();
+      jQuery('#content .dalt .bloc3 .tabs .tab-usrs').click(function () {
+        jQuery('#content .dalt .bloc3 .view').each(function () {
+          jQuery(this).hide();
+        });
+        jQuery('#content .dalt .bloc3 .tabs .tab').each(function () {
+          jQuery(this).removeClass('active');
+        });
+        jQuery(this).addClass('active');
+        jQuery('#content .dalt .bloc3 .view-portada-ultims-usuaris.view-id-portada_ultims_usuaris').show();
       });
-      jQuery('#content .dalt .bloc3 .tabs .tab').each(function () {
-        jQuery(this).removeClass('active');
-      });
-      jQuery(this).addClass('active');
-      jQuery('#content .dalt .bloc3 .view-portada-ultims-punts.view-id-portada_ultims_punts').show();
-    });
+    }
 
   }
 };

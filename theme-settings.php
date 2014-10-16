@@ -264,28 +264,46 @@ function pamapam_settings_submit(&$form, &$form_state) {
     $file = file_load($form_state['values']['imagen1']);
     $file->status = FILE_STATUS_PERMANENT;
     file_save($file);
-    file_usage_add($file, 'pamapam', 'layout', '8');
+    file_usage_add($file, 'pamapam', 'layout', '1');
   }
   if (file_load($form_state['values']['imagen2']) != 0) {
     $file = file_load($form_state['values']['imagen2']);
     $file->status = FILE_STATUS_PERMANENT;
     file_save($file);
-    file_usage_add($file, 'pamapam', 'layout', '8');
+    file_usage_add($file, 'pamapam', 'layout', '2');
   }
   if (file_load($form_state['values']['imagen3']) != 0) {
     $file = file_load($form_state['values']['imagen3']);
     $file->status = FILE_STATUS_PERMANENT;
     file_save($file);
-    file_usage_add($file, 'pamapam', 'layout', '8');
+    file_usage_add($file, 'pamapam', 'layout', '3');
   }
   if (file_load($form_state['values']['imagen01']) != 0) {
     $file = file_load($form_state['values']['imagen01']);
     $file->status = FILE_STATUS_PERMANENT;
     file_save($file);
-    file_usage_add($file, 'pamapam', 'layout', '8');
+    file_usage_add($file, 'pamapam', 'layout', '4');
   }
   if (file_load($form_state['values']['imagen02']) != 0) {
     $file = file_load($form_state['values']['imagen02']);
+    $file->status = FILE_STATUS_PERMANENT;
+    file_save($file);
+    file_usage_add($file, 'pamapam', 'layout', '5');
+  }
+  if (file_load($form_state['values']['central-inf-esquerra-img']) != 0) {
+    $file = file_load($form_state['values']['central-inf-esquerra-img']);
+    $file->status = FILE_STATUS_PERMANENT;
+    file_save($file);
+    file_usage_add($file, 'pamapam', 'layout', '6');
+  }
+  if (file_load($form_state['values']['central-inf-central-img']) != 0) {
+    $file = file_load($form_state['values']['central-inf-central-img']);
+    $file->status = FILE_STATUS_PERMANENT;
+    file_save($file);
+    file_usage_add($file, 'pamapam', 'layout', '7');
+  }
+  if (file_load($form_state['values']['central-inf-dreta-img']) != 0) {
+    $file = file_load($form_state['values']['central-inf-dreta-img']);
     $file->status = FILE_STATUS_PERMANENT;
     file_save($file);
     file_usage_add($file, 'pamapam', 'layout', '8');

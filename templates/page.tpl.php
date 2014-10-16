@@ -96,34 +96,36 @@
          </div>
          <div class="baix"> 
            <div class="bloc bloc5">
-             <a href="<?php print theme_get_setting('central-inf-esquerra-link'); ?>">
              <figure>
-               <img src="<?php print file_create_url(file_load(theme_get_setting('central-inf-esquerra-img'))->uri);?>"></img> 
-               <figcaption><?php print theme_get_setting('central-inf-esquerra-txt-img'); ?>
-               </figcaption>
-               </figure>
-              </a>
+               <a href="<?php print theme_get_setting('central-inf-esquerra-link'); ?>">
+                  <div class="darken-overlay"></div>
+                 <img src="<?php print file_create_url(file_load(theme_get_setting('central-inf-esquerra-img'))->uri);?>"></img> 
+                 <figcaption><?php print theme_get_setting('central-inf-esquerra-txt-img'); ?>
+                 </figcaption>
+                </a>
+             </figure>
              <h3><?php print theme_get_setting('central-inf-esquerra-txt');  ?> </h3>
            </div>
            <div class="bloc bloc6">
-             <a href="<?php print theme_get_setting('central-inf-central-link'); ?>">
              <figure>
-               <img src="<?php print file_create_url(file_load(theme_get_setting('central-inf-central-img'))->uri);?>"></img>
-               <figcaption><?php print theme_get_setting('central-inf-central-txt-img'); ?>
+               <a href="<?php print theme_get_setting('central-inf-central-link'); ?>">
+                  <div class="darken-overlay"></div>
+                 <img src="<?php print file_create_url(file_load(theme_get_setting('central-inf-central-img'))->uri);?>"></img>
+                 <figcaption><?php print theme_get_setting('central-inf-central-txt-img'); ?>
                </figcaption>
+               </a>
              </figure>
-             </a>
              <h3><?php print theme_get_setting('central-inf-central-txt');  ?> </h3>
            </div>
            <div class="bloc bloc7">
-             <a href="<?php print theme_get_setting('central-inf-dreta-link'); ?>">
              <figure>
-               <img src="<?php print file_create_url(file_load(theme_get_setting('central-inf-dreta-img'))->uri);?>"></img>
-               <figcaption><?php print theme_get_setting('central-inf-dreta-txt-img'); ?>
-               </figcaption>
+               <a href="<?php print theme_get_setting('central-inf-dreta-link'); ?>">
+                  <div class="darken-overlay"></div>
+                 <img src="<?php print file_create_url(file_load(theme_get_setting('central-inf-dreta-img'))->uri);?>"></img>
+                 <figcaption><?php print theme_get_setting('central-inf-dreta-txt-img'); ?>
+                 </figcaption>
+               </a>
              </figure>
-
-             </a>
              <h3><?php print theme_get_setting('central-inf-dreta-txt');  ?> </h3>
            </div>
            <div class="bloc bloc8">
@@ -134,7 +136,9 @@
        <div class="wrapper-blog">
           <?php print views_embed_view('portada_ultims_blogs','block'); ?>
        </div>
+        <?php drupal_add_js(drupal_get_path('theme', 'pamapam') . '/js/mapa.js'); ?>
         <?php drupal_add_js(drupal_get_path('theme', 'pamapam') . '/js/blocs_portada.js'); ?>
+        <?php drupal_add_js(drupal_get_path('theme', 'pamapam') . '/js/blogs_portada.js'); ?>
         <?php else: ?>
         <?php print render($page['content']); ?>
       <?php endif; ?>

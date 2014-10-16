@@ -1,0 +1,93 @@
+/* Footer Pam a Pam */
+
+.contenidor-footer {//grid footer
+  margin-top: 30px;
+  $zen-column-count: 12;
+  $zen-gutter-with: 35;
+  $zen-auto-include-item-base: true;
+  @include zen-grid-container();
+  .impulsen {
+    @include zen-grid-item (6,1);
+    .logos {
+      $zen-column-count: 2;
+      @include zen-grid-container();
+      .esquerra {
+        @include zen-grid-item(1,1);
+        padding-left: 60px;
+      }
+      .dreta {
+        @include zen-grid-item(1,2);
+      }
+    }
+  }
+  $zen-column-count: 12;
+  .participen {
+    @include zen-grid-item(6,7);
+  }
+}
+
+.contenidor-footer {
+  background: url('../images/fonfoo.png') $naranja;  
+  height: 380px;
+  .footer-top {
+    text-align: center;
+    p {
+      margin: 0;
+      padding: 30px 0 0;
+      strong em {
+        @include semi;
+        color: $gris;
+        font-style: normal;
+      }
+      em {
+        @include semi;
+        color: $negro;
+        font-style: normal;
+      }
+    }
+  }
+  .impulsen {
+    width: 50%;
+    float: left;
+    margin-top: 30px;
+    .superior {
+      @include doce;
+      color: #ffffff;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .logos {
+      a {
+      @include doce;
+      color: #ffffff;
+      font-weight: 600;
+      text-align: left;
+      display: inline-block;
+      }
+      img {
+        display: block;
+        height: 50px;
+        width: auto;
+        margin-bottom: 20px;
+      }
+    }
+    
+  }
+  .participen {
+    margin-top: 30px;
+    .superior {
+      @include doce;
+      color: #ffffff;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .logos {
+      a {
+        width: 30%;
+        float: left;
+      }
+    }
+  }
+}

@@ -70,6 +70,39 @@
   font-size: 14px;
   letter-spacing: 1px;
 }
+@mixin blog {
+  text-align: center;
+  .blog-top {
+    background-color: $verde;
+    border-bottom: 2px solid $s_verde;
+    padding: 30px 30px 0;
+    a {
+      @include blog1;
+      color: #ffffff;
+    }
+    p {
+      @include blog2;
+      background-color: $verde;
+      color: #ffffff;
+      border-top: 2px solid #3cb99b;
+      padding-top: 10px;
+      margin-top: 10px;
+      a {
+        @include blog2;
+        color: $gris;
+        &:hover {
+          color: $negro;
+        }
+      }
+    }
+  }
+  .blog-foot {
+    background-color: $s_verde;
+    @include blog3; 
+    color: #ffffff;
+    padding: 5px 0;
+  }
+}
 
 /* Tipos variables */
 
