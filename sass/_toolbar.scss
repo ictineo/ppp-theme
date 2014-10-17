@@ -20,15 +20,31 @@
             background-color: $fondo;
           }
         }
-        #toolbar-home a span {
-          background-image: url("../images/xinxeta.png");
-          background-position: top;
-          width: 30px;
-          height: 30px;
-          margin-bottom: 0px;
+        #toolbar-home a {
+          span {
+            background-image: url("../images/icons/xinxeta.png");
+            background-position: 7px 7px;
+            width: 30px;
+            height: 30px;
+            margin: 0px;
+            background-color: #ffffff;
+            @include border-radius(15px);
+          }
         }
-        ul#toolbar-home li.home a:hover {
-          background: transparent;
+        ul#toolbar-home li.home {
+          a {
+            &:hover {
+              background: transparent;
+            }
+          }
+          a.active {
+            width: 30px;
+            height: 30px;
+            margin: 0px;
+            background-color: #ffffff;
+            @include border-radius(15px);
+            padding: 0;
+          }
         }
         #toolbar-home a:hover span {
           opacity: 0.9;

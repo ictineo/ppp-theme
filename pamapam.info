@@ -68,6 +68,7 @@ stylesheets[all][] = css/styles.css
 
 ;scripts[] = js/script.js
 scripts[] = js/jquery.cycle2.min.js
+scripts[] = js/jquery.cycle2.carousel.min.js
 scripts[] = js/slimscroll/jquery.slimscroll.min.js
 
 

@@ -32,6 +32,7 @@ Drupal.behaviors.ppp_blocs_portada = {
         jQuery(this).addClass('active');
         jQuery('#content .dalt .bloc3 .view-portada-ultims-punts.view-id-portada_ultims_punts').show();
       });
+
       jQuery('#content .dalt .bloc3 .tabs .tab-comm').click(function () {
         jQuery('#content .dalt .bloc3 .view').each(function () {
           jQuery(this).hide();

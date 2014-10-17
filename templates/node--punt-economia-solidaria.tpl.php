@@ -33,7 +33,7 @@
 
    <div id="general-wrapper"> 
      <span class="filasup"> 
-       <div id="esquerra" class="columna-sup"> 
+       <div id="esquerra-sup" class="col1 columna-sup"> 
           <div id="fotografia" class="camp"> 
             <?php print render($content['field_fotografia']); ?>  
           </div>
@@ -43,7 +43,7 @@
           <div id="links" class="camp"> 
           </div>
        </div> 
-       <div id="central" class="columna-sup"> 
+       <div id="central-sup" class="col2 columna-sup"> 
          <div id="titol" class="camp"> 
            <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
          </div>
@@ -85,7 +85,8 @@
            <div class=iconeta> </div> 
            <?php print render($content['field_web']); ?>  
          </div>
-       <div id="dreta" class="columna-sup">  
+       </div>
+       <div id="dreta-sup" class="col3 columna-sup">  
         <?php
         $arrayaux = array();           
          foreach ($node->field_avaluacio_punt[LANGUAGE_NONE] as $key2 => $value) { 
@@ -95,27 +96,42 @@
          }
         krsort($arrayaux,SORT_NUMERIC);
         foreach ($arrayaux as $key3 => $valor) { 
-          if ($aux < 1) { 
+          // WTF???
+          //if ($aux < 1) { 
+            $num_criteri = 1;
             foreach ($valor as $key4 => $valor2) {
               if(strpos($key4,'avaluacio_criteri') !== false) { 
                 if(isset($valor2[LANGUAGE_NONE]['0']['value'])) {?> 
                   <span class="criteri">
                     <div id="<?php print($key4);?>">
                        <div class="<?php print($valor2[LANGUAGE_NONE]['0']['value']);?>">
+                          <?php print explode(',', variable_get('ppp_mapes_keys_field_avaluacio_criteri' . $num_criteri, ''), 2)[0]; ?>
                        </div>
                    </div>  
                  </span>
 <?php           }
+                $num_criteri++;
               }
-            }          
+           // }          
           }
         }?>
        </div> 
      </span>  
      <span class="filainf">
-       <div id="esquerra" class="columna-inf"> </div> 
-       <div id="central" class="columna-inf"> </div> 
-       <div id="dreta" class="columna-inf"> </div> 
+       <div id="esquerra-inf" class="col1 columna-inf">
+          <div class="row">
+              # <!-- VIEW DWL COMPTADOR DE PUNTS! -->
+            <span class="count-usr-text"><?php print t('users added this point as favorite'); ?></span>
+            <?php print views_embed_view('usuaris_punt_favorit', 'block_1', $node->nid); ?>
+          </div>
+          <?php print render($content['flag_favorit']); ?>
+          <?php print views_embed_view('punts_similars', 'block_1', $node->nid, $node->nid); ?>
+        </div>
+       <div id="central-inf" class="col2 columna-inf">
+          <?php print render($content['field_vota']); ?>
+          <?php print render($content['comments']); ?>
+        </div>
+       <div id="dreta-inf" class="col3 columna-inf"> </div> 
      </span>
    </div>
   <?php
@@ -127,50 +143,8 @@
 
   <?php print render($content['links']); ?>
 
-  <?php print render($content['comments']); ?>
 
-</article>
-       <div id="dreta" class="columna-sup">  
-    
-       </div> 
-     </span>  
-     <span class="filainf">
-       <div id="esquerra" class="columna-inf"> </div> 
-       <div id="central" class="columna-inf"> </div> 
-       <div id="dreta" class="columna-inf"> </div> 
-     </span>
-   </div>
-  <?php
-    // We hide the comments and links now so that we can render them later.
-    hide($content['comments']);
-    hide($content['links']);
- //   print render($content);
-  ?>
-
-  <?php print render($content['links']); ?>
-
-  <?php print render($content['comments']); ?>
-
-</article>
-       <div id="dreta" class="columna-sup">  
-    
-       </div> 
-     </span>  
-     <span class="filainf">
-       <div id="esquerra" class="columna-inf"> </div> 
-       <div id="central" class="columna-inf"> </div> 
-       <div id="dreta" class="columna-inf"> </div> 
-     </span>
-   </div>
-  <?php
-    // We hide the comments and links now so that we can render them later.
-    hide($content['comments']);
-    hide($content['links']);
- //   print render($content);
-  ?>
-
-  <?php print render($content['links']); ?>
-
-  <?php print render($content['comments']); ?>
+<?php dsm($content); ?>
+<?php dsm($node); ?>
 
 </article>

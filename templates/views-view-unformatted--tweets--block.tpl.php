@@ -22,6 +22,6 @@
     <?php print $row; ?>
   </div>
 <?php endforeach; ?>
+</div>
 <span id="tweet-prev"></span>
 <span id="tweet-next"></span>
-</div>

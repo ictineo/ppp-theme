@@ -258,6 +258,117 @@
             }
           }
           #filter-2 {
+            .icons-wrapper {
+              width: 65%;
+              margin: 22px auto 0 auto;
+              text-align: center;
+            }
+            .sector {
+              display: inline-block;
+              width: 22px;
+              height: 22px;
+              padding: 4px;
+              background-repeat: no-repeat;
+              overflow: hidden;
+              text-indent: 9999px;
+              background-image: url('../images/sectorssprite.png');
+            }
+            .sector-12 {
+              background-position: -31px -60px;
+              &.active,
+              &:hover {
+                background-position: 0px -60px;
+              }
+            }
+            .sector-21 {
+              background-position: -31px -276px;
+              &.active,
+              &:hover {
+                background-position: 0px -276px;
+              }
+            }
+            .sector-15 {
+              background-position: -31px -152px;
+              &.active,
+              &:hover {
+                background-position: 0px -152px;
+              }
+            }
+            .sector-13 {
+              background-position: -31px -90px;
+              &.active,
+              &:hover {
+                background-position: 0px -90px;
+              }
+            }
+            .sector-16 {
+              background-position: -31px -184px;
+              &.active,
+              &:hover {
+                background-position: 0px -184px;
+              }
+            }
+            .sector-14 {
+              background-position: -31px -121px;
+              &.active,
+              &:hover {
+                background-position: 0px -121px;
+              }
+            }
+            .sector-23 {
+              background-position: -31px -340px;
+              &.active,
+              &:hover {
+                background-position: 0px -340px;
+              }
+            }
+            .sector-20 {
+              background-position: -31px -246px;
+              &.active,
+              &:hover {
+                background-position: 0px -246px;
+              }
+            }
+            .sector- {
+              background-position: -31px px;
+              &.active,
+              &:hover {
+                background-position: 0px px;
+              }
+            }
+            .sector- {
+              background-position: -31px px;
+              &.active,
+              &:hover {
+                background-position: 0px px;
+              }
+            }
+            .sector- {
+              background-position: -31px px;
+              &.active,
+              &:hover {
+                background-position: 0px px;
+              }
+            }
+            .sector- {
+              background-position: -31px px;
+              &.active,
+              &:hover {
+                background-position: 0px px;
+              }
+            }
+            #filter-2-label-box {
+              width: 95%;
+              font-family: 'titregular';
+              font-size: 16px;
+              line-height: 20px;
+              color: $negro;
+              height: 35px;
+              padding: 10px 0;
+              margin: 0 auto;
+              text-align: center;
+              background-color: white;
+            }
           }
           #filter-3 {
             .icons-wrapper {
@@ -337,7 +448,8 @@
               line-height: 20px;
               color: $negro;
               height: 35px;
-              padding: 10px 25px;
+              padding: 10px 0;
+              margin: 0 auto;
               text-align: center;
               background-color: white;
             }
@@ -427,6 +539,8 @@
           .views-row {
             .field-name-field-imatge-portada {
               width: 100%;
+              margin-left: -30px;
+              margin-top: -30px; //equilibrem el padding de la caixa necessari pel text de dins
               * {
                 width: 100%;
               }
@@ -446,6 +560,7 @@
               margin-top: 20px;
               .tab {
                 @include doce;
+                font-size: 10px;
                 color: $negro;
                 padding: 4px 8px;
                 letter-spacing: 0px;
@@ -569,6 +684,14 @@
       }
       .wrapper-blog {
         .view {
+          .view-header {
+            text-align: center;
+            @include light;
+            color: $negro;
+            text-transform: uppercase;
+            padding: 20px 0;
+            border-top: 2px solid $marro_border; 
+          }
           .views-row {
             @include blog;
           }
