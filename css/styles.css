@@ -2671,20 +2671,20 @@ a {
   background-position: 0px -246px;
 }
 /* line 332, ../sass/_home.scss */
-.front #main #content .region-content-front #map-wrapper #filter-2 .sector- {
-  background-position: -31px px;
+.front #main #content .region-content-front #map-wrapper #filter-2 .sector-10 {
+  background-position: -31px 0px;
 }
 /* line 335, ../sass/_home.scss */
-.front #main #content .region-content-front #map-wrapper #filter-2 .sector-.active, .front #main #content .region-content-front #map-wrapper #filter-2 .sector-:hover {
-  background-position: 0px px;
+.front #main #content .region-content-front #map-wrapper #filter-2 .sector-10.active, .front #main #content .region-content-front #map-wrapper #filter-2 .sector-10:hover {
+  background-position: 0px 0px;
 }
 /* line 339, ../sass/_home.scss */
-.front #main #content .region-content-front #map-wrapper #filter-2 .sector- {
-  background-position: -31px px;
+.front #main #content .region-content-front #map-wrapper #filter-2 .sector-22 {
+  background-position: -31px -309px;
 }
 /* line 342, ../sass/_home.scss */
-.front #main #content .region-content-front #map-wrapper #filter-2 .sector-.active, .front #main #content .region-content-front #map-wrapper #filter-2 .sector-:hover {
-  background-position: 0px px;
+.front #main #content .region-content-front #map-wrapper #filter-2 .sector-22.active, .front #main #content .region-content-front #map-wrapper #filter-2 .sector-22:hover {
+  background-position: 0px -309px;
 }
 /* line 346, ../sass/_home.scss */
 .front #main #content .region-content-front #map-wrapper #filter-2 .sector- {

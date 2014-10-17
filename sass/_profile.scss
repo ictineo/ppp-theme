@@ -1,0 +1,154 @@
+/* Estils del perfil d'usuaris de Pam a Pam */
+
+.page-user.page-user {//Grid Profile
+  #page #main #content {
+    $zen-column-count: 12;
+    $zen-gutter-with: 16px;
+    $zen-auto-include-item-base: true;
+    @include zen-grid-container();
+    #page-title {
+      @include zen-grid-item(9,3);
+    }
+    .profile h3 {
+      @include zen-clear();
+      @include zen-grid-item(9,3);
+    }
+    dl h3.field-label {
+      @include zen-clear();
+      @include zen-grid-item(9,3);
+    }
+    .field.field-name-field-foto-profile {
+      @include zen-grid-item(2,1);
+      position: absolute;
+      top: 0;
+    }
+    .field {
+      @include zen-clear();
+      @include zen-grid-item(9,3);
+    }
+    .view.view-eva-profile.view-display-id-entity_view_2 {
+      @include zen-clear();
+      @include zen-grid-item(3,3);
+      dl h3 {
+        width: 100%;
+        margin-left: 0;
+      }
+      .view-content {
+        @include zen-clear();
+      }
+    }
+    .view.view-eva-profile.view-display-id-entity_view_3 {
+      @include zen-grid-item(3,6);
+      dl h3 {
+        width: 100%;
+        margin-left: 0;
+      }
+      .view-content {
+        @include zen-clear();
+      }
+    }
+    .view.view-eva-profile.view-display-id-entity_view_1 {
+      @include zen-grid-item(3,9);
+      dl h3 {
+        width: 100%;
+        margin-left: 0;
+      }
+      .view-content {
+        @include zen-clear();
+      }
+    }
+    dt,
+    dd,
+    dl dd,
+    dl dt {
+      @include zen-clear();
+      @include zen-grid-item(9,3);
+    }
+  }
+}
+
+.page-user.page-user {
+  #page #main {
+    border-top: 2px solid $marro_border;
+    background-color: $fondo;
+    #content {
+      .messages--error.messages.error {
+        display: none;
+      }
+      h1#page-title {
+        color: $naranja;
+        font-family: 'titsemibold_upright';
+        line-height: 29px;
+        font-size: 24px;
+        letter-spacing: 0.3px;
+        display: block;
+        width: 100%;
+      }
+      .profile {
+        h3 {
+          @include h3;
+          color: $negro;
+          border: 0px none;
+          margin-bottom: 5px;
+        }
+        dl h3 {
+          @include semi;
+          color: $naranja;
+          margin-top: 5px;
+          margin-bottom: 5px;
+        }
+        .field-name-field-web {
+          margin-bottom: 5px;
+        }
+        .field-name-field-twitter {
+          margin-bottom: 15px;
+        }
+        .field a {
+          color: $gris;
+          font-size: 14px;
+          &:hover {
+            color: $negro;
+          }
+        }
+        p,
+        .field-name-field-comptador-avaluacions,
+        .field-name-field-frase-definitoria {
+          margin-top: 5px;
+          margin-bottom: 15px;
+          @include blog2;
+          color: $negro;
+        }
+        .view {
+          .field-content {
+            @include blog2;
+            a {
+              color: $gris;
+              font-weight: 600;
+              &:hover {
+                color: $negro;
+              }
+            }
+          }
+          ul li a {
+            @include blog2;
+            color: $gris;
+            &:hover {
+              color: $negro;
+            }
+          }
+        }
+        dd ul li {
+          list-style: none;
+          a {
+            @include blog2;
+            color: $gris;
+            &:hover {
+              color: $negro;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
