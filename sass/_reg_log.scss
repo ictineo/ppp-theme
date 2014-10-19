@@ -1,0 +1,66 @@
+/**
+ * estils generals de formularis
+ */
+
+.page-user.page-user * {
+  font-family: 'titregular';
+  textarea,
+  input {
+    border: 2px solid rgb(170, 170, 170);
+    @include border-radius(2px);
+    font-family: 'titregular';
+    padding: 2px 6px;
+    color: $negro;
+    &:focus {
+      border: 2px solid $naranja;
+      @include box-shadow(transparent 0 0 0);
+    }
+  }
+  input[type=submit] {
+    color: white;
+    background-color: $naranja;
+    @include border-radius(2px);
+    border: 0px none;
+    height: 35px;
+    margin-top: 35px;
+    margin-left: 6px;
+  }
+  .description {
+    font-family: 'titthin';
+    color: $negro;
+    font-size: 11px;
+    line-height: 12px;
+  }
+  ul.tabs-primary {
+    clear: both;
+    margin-left: 18%;
+    margin-top: 45px;
+    margin-botton: 45px;
+    @include background-image(linear-gradient(center bottom , $s_verde 1px, transparent 1px));
+    li {
+      border-top-color: $s_verde;
+      border-right-color: $s_verde;
+      border-left-color: $s_verde;
+    }
+  }
+  #user-pass,
+  #user-register-form, 
+  #user-login {
+    margin-left: 18%;
+    label {
+      color: $negro;
+    }
+    #edit-profile-main-profile-field-bio-und-0-format {
+      display: none;
+    }
+    fieldset {
+      margin-top: 18px;
+      border-color: $s_verde;
+    }
+    .fieldset-legend,
+    .fieldset-title {
+      color: $naranja;
+      font-family: 'titbold';
+    }
+  }
+}

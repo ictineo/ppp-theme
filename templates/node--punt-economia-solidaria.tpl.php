@@ -8,16 +8,8 @@
  */
 ?>
 <article class="node-<?php print $node->nid; ?> <?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-  <?php dsm($content); ?>
-  <?php dsm($node); ?>
   <?php if ($title_prefix || $title_suffix || $display_submitted || $unpublished || !$page && $title): ?>
     <header>
-      <?php print render($title_prefix); ?>
-      <?php if (!$page && $title): ?>
-        <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
-      <?php endif; ?>
-      <?php print render($title_suffix); ?>
-
       <?php if ($display_submitted): ?>
         <p class="submitted">
           <?php print $user_picture; ?>
@@ -47,20 +39,22 @@
          <div id="titol" class="camp"> 
            <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
          </div>
+         <div id="sectors">
          <?php foreach ($content['field_sector_subsectors'] as $key => $values) { ?>
          <?php   if(is_numeric($key)) { ?>
-         <div id="sectors" class="camp"> 
-            <a href="<?php print $values['#href']; ?>"><div id="<?php print $values['#title']; ?>" class=icona></div></a>
-         </div>
+         <div class="sector sector-<?php print $values['#options']['entity']->tid ?>"></div>
          <?php   }    ?>
          <?php }      ?>
+         </div>
+         <div id="etiquetes-wrapper">
          <?php foreach ($content['field_etiquetes'] as $key => $values) { ?>
          <?php   if(is_numeric($key)) { ?>
          <div id="etiquetes" class="camp"> 
-           <?php print $values['#items']['0']['data']; ?>
+            <?php print $values['#items']['0']['data']; ?>
          </div>
          <?php   }    ?>
          <?php }      ?>
+         </div>
          <div id="descripcio" class="camp"> 
            <?php print render($content['field_descripcio']); ?>  
          </div>
@@ -85,9 +79,15 @@
            <div class=iconeta> </div> 
            <?php print render($content['field_web']); ?>  
          </div>
+         <div id="xxss" class="camp"> 
+           <?php print render($content['field_web']); ?>  
+         </div>
+       </div>
        </div>
        <div id="dreta-sup" class="col3 columna-sup">  
-        <?php
+       <div id=criteris-titol> <?php print t('Criteris'); ?> </div>
+       <span class="criteri-wrapper">
+      <?php
         $arrayaux = array();           
          foreach ($node->field_avaluacio_punt[LANGUAGE_NONE] as $key2 => $value) { 
            if(is_numeric($key2) && isset($value['entity']->changed)) {
@@ -95,43 +95,49 @@
            }
          }
         krsort($arrayaux,SORT_NUMERIC);
+        $aux = 0;
         foreach ($arrayaux as $key3 => $valor) { 
-          // WTF???
-          //if ($aux < 1) { 
+          if ($aux < 1) { 
             $num_criteri = 1;
             foreach ($valor as $key4 => $valor2) {
               if(strpos($key4,'avaluacio_criteri') !== false) { 
                 if(isset($valor2[LANGUAGE_NONE]['0']['value'])) {?> 
-                  <span class="criteri">
-                    <div id="<?php print($key4);?>">
-                       <div class="<?php print($valor2[LANGUAGE_NONE]['0']['value']);?>">
-                          <?php print explode(',', variable_get('ppp_mapes_keys_field_avaluacio_criteri' . $num_criteri, ''), 2)[0]; ?>
+                    <div class="<?php print($key4.' criteri');?>">
+                       <div class="puntuacio valor<?php print($valor2[LANGUAGE_NONE]['0']['value']);?>">
+                          <div class="text"> <?php print explode(',', variable_get('ppp_mapes_keys_field_avaluacio_criteri' . $num_criteri, ''), 2)[0]; ?> </div>
                        </div>
                    </div>  
-                 </span>
 <?php           }
                 $num_criteri++;
               }
-           // }          
+            }          
           }
+          $aux++; 
         }?>
+       </span>
        </div> 
      </span>  
      <span class="filainf">
        <div id="esquerra-inf" class="col1 columna-inf">
           <div class="row">
-              # <!-- VIEW DWL COMPTADOR DE PUNTS! -->
-            <span class="count-usr-text"><?php print t('users added this point as favorite'); ?></span>
+               <!-- VIEW DWL COMPTADOR DE PUNTS! -->
             <?php print views_embed_view('usuaris_punt_favorit', 'block_1', $node->nid); ?>
           </div>
           <?php print render($content['flag_favorit']); ?>
+        <div id=similars-title><?php print t('Punts Similars'); ?> </div>
           <?php print views_embed_view('punts_similars', 'block_1', $node->nid, $node->nid); ?>
         </div>
        <div id="central-inf" class="col2 columna-inf">
+          <?php print render($content['links']); ?>
           <?php print render($content['field_vota']); ?>
-          <?php print render($content['comments']); ?>
+          <?php print ('<span> Hi ha '.$node->comment_count.' comentaris </span>'); ?>
+           <?php print render($content['comments']); ?>
         </div>
-       <div id="dreta-inf" class="col3 columna-inf"> </div> 
+       <div id="dreta-inf" class="col3 columna-inf">
+         <div id=xxss> <?php print views_embed_view('xxss_del_node', 'block',$node->nid); ?> </div>
+         <div id=compartir> Comparteix </div> <div id=iconacomp> </div>
+         <div id=blogs><?php print views_embed_view('portada_ultims_blogs', 'block'); ?> </div>
+       </div>
      </span>
    </div>
   <?php
@@ -141,10 +147,7 @@
  //   print render($content);
   ?>
 
-  <?php print render($content['links']); ?>
 
 
-<?php dsm($content); ?>
-<?php dsm($node); ?>
 
 </article>

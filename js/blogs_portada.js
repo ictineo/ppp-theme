@@ -16,7 +16,7 @@
 // To understand behaviors, see https://drupal.org/node/756722#behaviors
 Drupal.behaviors.ppp_theme_blogs_portada = {
   attach: function(context, settings) {
-    jQuery('.wrapper-blog .views-row').css('overflow', 'hidden');
+    jQuery('.wrapper-blog .views-row .blog-top').css('overflow', 'hidden');
     jQuery('.wrapper-blog .views-row .blog-top').css('position', 'relative');
     jQuery('.wrapper-blog .field-name-field-imatge-portada').css({'position': 'absolute', 'width': '100%'}).hide();
     jQuery('.wrapper-blog .views-row').mouseenter(function () {

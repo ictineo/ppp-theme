@@ -82,7 +82,7 @@
             <?php print check_markup($pdata['value'], $pdata['format']); ?>
            </div>
            <div class="bloc bloc3"> 
-             <?php print t('Activity on web'); ?>
+             <span class='tabs-title'><?php print t('Activity on web'); ?></span>
              <div class="tabs">
                <span class="tab-pnts tab"><?php print t('Last points'); ?></span>
                <span class="tab-comm tab"><?php print t('Last comments'); ?></span>

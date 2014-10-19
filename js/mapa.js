@@ -17,7 +17,7 @@
 Drupal.behaviors.ppp_mapes_mapa= {
   attach: function(context, settings) {
     jQuery('#preview #preview-content-wrapper').slimScroll({
-      height: '550px'
+      height: '400px'
     });
 
   }

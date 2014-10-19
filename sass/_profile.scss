@@ -119,6 +119,33 @@
           color: $negro;
         }
         .view {
+          &.view-display-id-entity_view_2 {
+            dl h3 {
+              @include caixa($naranja);
+              &:after {
+                @include caixa_after;
+                background-image: url('../images/icons/quB.png');
+              }
+            }
+          }
+          &.view-display-id-entity_view_3 {
+            dl h3 {
+              @include caixa($verde);
+              &:after {
+                @include caixa_after;
+                background-image: url('../images/icons/xinxeta.png');
+              }
+            }
+          }
+          &.view-display-id-entity_view_1 {
+            dl h3 {
+              @include caixa($marro_clar);
+              &:after {
+                @include caixa_after;
+                background-image: url('../images/icons/xinxeta.png');
+              }
+            }
+          }
           .field-content {
             @include blog2;
             a {

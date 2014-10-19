@@ -1,3 +1,11 @@
+#content {
+  .messages--error {
+    display: none;
+  }
+  h1#page-title {
+    display: none;
+  }
+}
 body.node-type-punt-economia-solidaria {
   article.node-punt-economia-solidaria {
     #general-wrapper {
@@ -13,45 +21,421 @@ body.node-type-punt-economia-solidaria {
         }
         .col3 {
           @include zen-grid-item(4,9);
+          .criteri-wrapper {
+            @include zen-grid-item(2,5);
+          }
         }
       }
+      background-color: $fondo;
       // Style.
       .filasup {
         #esquerra-sup {
+          #desde {
+            @include semi;
+            font-size: 12px;
+            color: $gris;
+            .field-name-field-membre-desde {
+              display: inline;
+            }
+          }
         }
         #central-sup {
+          padding-top: 12px;
+          border-top: 2px solid $marro_clar; 
+          #titol h2 a {
+            color: $naranja;
+            font-family: 'titsemibold_upright';
+            line-height: 29px;
+            font-size: 24px;
+            letter-spacing: 0.3px;
+            display: block;
+            width: 100%;
+            margin-bottom: 12px;
+          }
+          #sectors {
+            .camp {
+              display: inline;
+            }
+            .sector {
+              display: none;
+              width: 22px;
+              height: 22px;
+              padding: 4px;
+              background-repeat: no-repeat;
+              overflow: hidden;
+              text-indent: 9999px;
+              display: none;
+              background-image: url('../images/sectorssprite.png');
+            }
+            .sector-12,
+            .sector-21,
+            .sector-15,
+            .sector-13,
+            .sector-16,
+            .sector-14,
+            .sector-23,
+            .sector-20,
+            .sector-10,
+            .sector-22,
+            .sector-18,
+            .sector-11 {
+              display: inline-block;
+            }
+            .sector-12 {
+              background-position: -31px -60px;
+              &.active,
+              &:hover {
+                background-position: 0px -60px;
+              }
+            }
+            .sector-21 {
+              background-position: -31px -276px;
+              &.active,
+              &:hover {
+                background-position: 0px -276px;
+              }
+            }
+            .sector-15 {
+              background-position: -31px -152px;
+              &.active,
+              &:hover {
+                background-position: 0px -152px;
+              }
+            }
+            .sector-13 {
+              background-position: -31px -90px;
+              &.active,
+              &:hover {
+                background-position: 0px -90px;
+              }
+            }
+            .sector-16 {
+              background-position: -31px -184px;
+              &.active,
+              &:hover {
+                background-position: 0px -184px;
+              }
+            }
+            .sector-14 {
+              background-position: -31px -121px;
+              &.active,
+              &:hover {
+                background-position: 0px -121px;
+              }
+            }
+            .sector-23 {
+              background-position: -31px -340px;
+              &.active,
+              &:hover {
+                background-position: 0px -340px;
+              }
+            }
+            .sector-20 {
+              background-position: -31px -246px;
+              &.active,
+              &:hover {
+                background-position: 0px -246px;
+              }
+            }
+            .sector-10 {
+              background-position: -31px 0px;
+              &.active,
+              &:hover {
+                background-position: 0px 0px;
+              }
+            }
+            .sector-22 {
+              background-position: -31px -308px;
+              &.active,
+              &:hover {
+                background-position: 0px -308px;
+              }
+            }
+            .sector-18 {
+              background-position: -31px -214px;
+              &.active,
+              &:hover {
+                background-position: 0px -214px;
+              }
+            }
+            .sector-11 {
+              background-position: -31px -30px;
+              &.active,
+              &:hover {
+                background-position: 0px -30px;
+              }
+            }
+          }
+          #etiquetes-wrapper {
+            background-color: #ffffff;
+            padding: 0 4px;
+            #etiquetes {
+              @include light;
+              font-size:12px;
+              display: inline;
+              color: $negro;
+              &:after {
+                content: ", ";
+              }
+              &:last-of-type:after {
+                content: " ";
+              }
+            }
+          }
+          .field-name-field-descripcio {
+            p {
+              @include light;
+              color: $gris;
+              font-size: 12px;
+            }
+          }
+          #adreça {
+            margin: 10px 0;
+            .iconeta {
+              @include icon;
+              background-image: url('../images/icons/xin.png');
+            }
+            .field-name-field-adreca {
+              @include light;
+              color: $gris;
+              display: inline;
+            }
+          }
+          #horari {
+            margin: 10px 0;
+            .iconeta {
+              @include icon;
+              background-image: url('../images/icons/h.png');
+              float: left;
+              margin: 5px 0px 5px 5px;
+            }
+            .field-name-field-horari {
+              margin-top: 5px;
+              p {
+                @include light;
+                color: $gris;
+                display: inline;
+              }
+            }
+          }
+          #telefon {
+            margin: 10px 0;
+            .iconeta {
+              @include icon;
+              background-image: url('../images/icons/t.png');
+              float: left;
+              margin: 5px 0px 5px 5px;
+              background-position: 0 2px;
+            }
+            .field-name-field-telefon {
+              margin-top: 5px;
+              @include light;
+              color: $gris;
+              display: inline;
+            }
+          }
+          #mail {
+            margin: 10px 0;
+            .iconeta {
+              @include icon;
+              background-image: url('../images/icons/e.png');
+              float: left;
+              margin: 5px 0px 5px 5px;
+              background-position: 0 2px;
+            }
+            .field-name-field-mail {
+              margin-top: 5px;
+              @include light;
+              color: $gris;
+              display: inline;
+            }
+          }
+          #web {
+            margin: 10px 0;
+            .iconeta {
+              @include icon;
+              background-image: url('../images/icons/i.png');
+              float: left;
+              margin: 5px 0px 5px 5px;
+              background-position: 0 2px;
+            }
+            .field-name-field-web a {
+              margin-top: 5px;
+              @include light;
+              color: $gris;
+              display: inline;
+              &:hover {
+                color: $negro;
+              }
+            }
+          }
         }
         #dreta-sup {
-        }
-      }
-      .filainf {
-        background-color: $marro_clar_2trans;
-        display: block;
-        #esquerra-inf {
-          .row {
-            width: 100%;
-            .view-id-usuaris_punt_favorit.view-display-id-block_1 {
-              width: 50%;
-              float: right;
-              position: relative;
-              .views-row {
-                a {
-                  display: inline-block;
-                  line-height: 0px;
-                  border-radius: 60%;
-                  overflow: hidden;
-                  width: 50px;
-                  height: 50px;
-                  margin-right: 12px;
+          #criteris-titol {
+            @include semi;
+            color: $naranja;
+            font-size: 20px;
+            width: 96%;
+            text-align: center;
+            line-height: 60px;
+            padding: 0px;
+            margin: 0 0 20px 2%;
+            border-bottom: 2px solid $marro_clar_trans;
+            position: relative;
+            &:before,
+            &:after {
+              content: ' ';
+              position: absolute;
+              display: block;
+              left: 50%;
+              top: 60px;
+              width: 0px;
+              height: 0px;
+              border: 5px solid transparent;
+              border-top: 5px solid $fondo;
+            }
+            &:before {
+              top: 62px;
+              border: 5px solid transparent;
+              border-top: 5px solid $marro_clar_trans;
+            }
+          }
+          .criteri-wrapper {
+            .field_avaluacio_criteri1 {
+              background-image: url('../images/icons/criteris/CprT.png');
+            }
+            .field_avaluacio_criteri2 {
+              background-image: url('../images/icons/criteris/CcjT.png');
+            }
+            .field_avaluacio_criteri3 {
+              background-image: url('../images/icons/criteris/CtrT.png');
+            }
+            .field_avaluacio_criteri4 {
+              background-image: url('../images/icons/criteris/CisT.png');
+            }
+            .field_avaluacio_criteri5 {
+              background-image: url('../images/icons/criteris/CinT.png');
+            }
+            .field_avaluacio_criteri6 {
+              background-image: url('../images/icons/criteris/CxaT.png');
+            }
+            .field_avaluacio_criteri7 {
+              background-image: url('../images/icons/criteris/CbeT.png');
+            }
+            .field_avaluacio_criteri8 {
+              background-image: url('../images/icons/criteris/CsoT.png');
+            }
+            .field_avaluacio_criteri9 {
+              background-image: url('../images/icons/criteris/CgrT.png');
+            }
+            .field_avaluacio_criteri10 {
+              background-image: url('../images/icons/criteris/CeeT.png');
+            }
+            .field_avaluacio_criteri11 {
+              background-image: url('../images/icons/criteris/CfsT.png');
+            }
+            .field_avaluacio_criteri12 {
+              background-image: url('../images/icons/criteris/CdpT.png');
+            }
+            .field_avaluacio_criteri13 {
+              background-image: url('../images/icons/criteris/CegT.png');
+            }
+            .field_avaluacio_criteri14 {
+              background-image: url('../images/icons/criteris/CdiT.png');
+            }
+            .field_avaluacio_criteri15 {
+              background-image: url('../images/icons/criteris/CccT.png');
+            }
+            .criteri {
+              background-repeat: no-repeat;
+              display: block;
+              width: 50px;
+              height: 30px;
+              padding-left: 28px;
+              & > div {
+                width:600%;
+              }
+              .puntuacio{
+                .text{
+                  @include light;
+                  color: $negro;
+                  font-size: 12px;
+                  visibility: hidden;              
                 }
               }
-              #usr-prev,
-              #usr-next {
-                content: ' ';
+              .puntuacio:hover{
+                background:$naranja;
                 position: absolute;
-                width: 15px;
-                height: 50px;
-                display: block;
+                width: 23%;
+                right: 55px;
+                text-align: center;
+                opacity: 0.8;
+                .text {
+                  visibility: visible;
+                  line-height: 24px;
+                }
+              }
+              .valor0 {
+              background-image: url('../images/icons/est0.png');
+              background-repeat: no-repeat;
+              }
+              .valor1 {
+              background-image: url('../images/icons/est1.png');
+              background-repeat: no-repeat;
+              }
+              .valor2 {
+              background-image: url('../images/icons/est2.png');
+              background-repeat: no-repeat;
+              }
+              .valor3 {
+              background-image: url('../images/icons/est3.png');
+              background-repeat: no-repeat;
+              }
+              .valor4 {
+              background-image: url('../images/icons/est4.png');
+              background-repeat: no-repeat;
+              }
+              .valor5 {
+              background-image: url('../images/icons/est5.png');
+              background-repeat: no-repeat;
+              }
+            }
+          }
+        }
+      }
+  .filainf {
+    margin-top: 20px;
+    padding-top: 40px;
+    background-color: $marro_blocs;
+    display: block;
+    a {
+      color: $naranja;
+    }
+    #esquerra-inf {
+      .row {
+        width: 100%;
+        .view-id-usuaris_punt_favorit.view-display-id-block_1 {
+          width: 50%;
+          float: right;
+          position: relative;
+          .views-row {
+            a {
+              display: inline-block;
+              line-height: 0px;
+              border-radius: 60%;
+              overflow: hidden;
+              width: 50px;
+              height: 50px;
+              margin-right: 12px;
+            }
+          }
+          #usr-prev,
+          #usr-next {
+            content: ' ';
+            position: absolute;
+            width: 15px;
+            height: 50px;
+            display: block;
                 background-color: white;
                 top: 0px;
                 cursor: pointer;
@@ -78,6 +462,7 @@ body.node-type-punt-economia-solidaria {
             width: 100%;
             clear: both;
             a {
+              @include h3;
               width: 100%;
               position: relative;
               text-align: center;
@@ -104,8 +489,115 @@ body.node-type-punt-economia-solidaria {
           }
         }
         #central-inf {
+          h3.field-label {
+            @include h3;
+            width: 100%;
+            position: relative;
+            text-align: center;
+            padding: 8px 0;
+            color: white;
+            font-size: 18px;
+            display: block;
+            background-color: $verde;
+            @include border-radius(2px);
+            &:after {
+              content: ' ';
+              display: block;
+              position: absolute;
+              right: 0px;
+              top: 0px;
+              width: 40px;
+              height: 100%;
+              background-image: url('../images/icons/estB.png');
+              background-repeat: no-repeat;
+              background-position: 50%;
+              border-left: 1px solid white;
+            }
+          }
         }
         #dreta-inf {
+          #compartir {
+            @include caixa($marro_clar);
+            &:after {
+              @include caixa_after;
+              background-image:url('../images/icons/compB.png');
+            }
+          }
+          #xxss {
+            margin-bottom: 35px;
+            text-align: center;
+            .fb-wrapper {
+              a {
+                color:$marro_clar;
+                @include light;
+                font-size: 20px;
+                margin: 0 15px;
+                &:before {
+                  @include icon;
+                  background-image: url('../images/icons/RRSS2.png');
+                  width: 15px;
+                  height: 18px;
+                  padding-left: 0;
+                  background-position: 0px -73px;
+                }
+                &:hover:before {
+                  background-position: 0px 0px;
+                }
+              }
+            }
+            .gp-wrapper {
+              a {
+                color:$marro_clar;
+                @include light;
+                font-size: 20px;
+                margin: 0 15px;
+                &:before {
+                  @include icon;
+                  background-image: url('../images/icons/RRSS2.png');
+                  width: 22px;
+                  height: 18px;
+                  padding-left: 0;
+                  background-position: -102px -73px;
+                }
+                &:hover:before {
+                  background-position: -102px 0px;
+                }
+              }
+            }
+            .tw-wrapper {
+              a {
+                color:$marro_clar;
+                @include light;
+                font-size: 20px;
+                margin: 0 15px;
+                &:before {
+                  @include icon;
+                  background-image: url('../images/icons/RRSS2.png');
+                  width: 22px;
+                  height: 18px;
+                  padding-left: 0;
+                  background-position: -15px -73px;
+                }
+                &:hover:before {
+                  background-position: -15px 0px;
+                }
+              }
+            }
+          }
+          #blogs {
+            .view {
+              .view-header {
+                              }
+              .views-row {
+                @include blog;
+              }
+            }
+          }
+          #blogs {
+            .field-name-field-imatge-portada{
+              display: none;
+            }
+          }
         }
       }
     }

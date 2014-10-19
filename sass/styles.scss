@@ -22,12 +22,14 @@
 //Fulls d'estil propis de Projecte Ictineo SCCL per Pam a Pam
 @import "fonts";
 @import "vars";
+* {font-family: 'titregular'; color: $negro;} //font per defecte
 @import "mixinsppp";
 @import "compass/css3";
 @import "general";
 @import "toolbar";
 @import "header";
 @import "home";
+@import "reg_log";
 @import "punt_full";
 @import "footer";
 @import "profile";
