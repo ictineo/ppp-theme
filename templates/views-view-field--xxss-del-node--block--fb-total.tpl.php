@@ -25,4 +25,4 @@ global $base_url;
 $tit = $row->node_title;
 $url = $base_url . '/' . drupal_get_path_alias('node/' . $row->nid);
 ?>
-<a href="https://api.facebook.com/method/fql.query?query=select%20like_count%20from%20link_stat%20where%20url=%27<?php print $url; ?>%27&format=xml"><?php print $output; ?></a>
+<a target="_blank" href="http://www.facebook.com/sharer.php?u=<?php print $url; ?>"><?php print $output; ?></a>

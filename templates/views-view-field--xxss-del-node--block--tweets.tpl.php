@@ -25,4 +25,4 @@ global $base_url;
 $tit = $row->node_title;
 $url = $base_url . '/' . drupal_get_path_alias('node/' . $row->nid);
 ?>
-<a href="https://twitter.com/intent/tweet?url=<?php print $url; ?>&amp;text=<?php print $tit; ?>&amp;via=pamapam"><?php print $output; ?></a>
+<a target="_blank"  href="https://twitter.com/intent/tweet?url=<?php print $url; ?>&amp;text=<?php print $tit; ?>&amp;via=pamapam"><?php print $output; ?></a>

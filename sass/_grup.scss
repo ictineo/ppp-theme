@@ -1,0 +1,54 @@
+body.node-type-grup-treball {
+  #main {
+    @include zen-grid-container();
+    #content {
+      @include zen-grid-item(8,1);
+    }
+    .region-sidebar-second {
+      @include zen-grid-item(4,9);
+    }
+    h2 a,
+    h2 {
+      color: $naranja;
+    }
+    .view {
+      padding: 12px 24px;
+      background-color: $fondo;
+      .date-nav {
+        ul.pager {
+          list-style: none;
+        }
+      }
+    }
+  }
+  .bt-wrapper {
+    .bt-content {
+      ul {
+        list-style: none;
+        margin-bottom: 12px;
+        padding-left: 8px;
+        a {
+          font-family: 'titbold';
+          color: $naranja;
+        }
+        li {
+          margin-bottom: 14px;
+        }
+      }
+    }
+  }
+}
+body.node-type-esdeveniment-grup,
+body.node-type-forum,
+body.node-type-noticia-grup {
+  #page {
+    background-color: $fondo;
+    padding-bottom: 32px;
+    #main {
+      @include zen-grid-container();
+      #content {
+        @include zen-grid-item(8,3);
+      }
+    }
+  }
+}

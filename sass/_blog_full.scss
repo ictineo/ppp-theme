@@ -1,0 +1,79 @@
+body.node-type-entrada-de-blog {
+  #main {
+    background-color: $fondo;
+    #content {
+      @include zen-grid-container();
+      #main-col {
+        @include zen-grid-item(7,2);
+      }
+      #sec-col {
+        @include zen-grid-item(4,9);
+      }
+      #main-col {
+      }
+      #sec-col {
+        .view-id-xxss_del_node.view-display-id-block  {
+          margin-bottom: 35px;
+          text-align: center;
+          .fb-wrapper {
+            a {
+              color:$marro_clar;
+              @include light;
+              font-size: 20px;
+              margin: 0 15px;
+              &:before {
+                @include icon;
+                background-image: url('../images/icons/RRSS2.png');
+                width: 15px;
+                height: 18px;
+                padding-left: 0;
+                background-position: 0px -73px;
+              }
+              &:hover:before {
+                background-position: 0px 0px;
+              }
+            }
+          }
+          .gp-wrapper {
+            a {
+              color:$marro_clar;
+              @include light;
+              font-size: 20px;
+              margin: 0 15px;
+              &:before {
+                @include icon;
+                background-image: url('../images/icons/RRSS2.png');
+                width: 22px;
+                height: 18px;
+                padding-left: 0;
+                background-position: -102px -73px;
+              }
+              &:hover:before {
+                background-position: -102px 0px;
+              }
+            }
+          }
+          .tw-wrapper {
+            a {
+              color:$marro_clar;
+              @include light;
+              font-size: 20px;
+              margin: 0 15px;
+              &:before {
+                @include icon;
+                background-image: url('../images/icons/RRSS2.png');
+                width: 22px;
+                height: 18px;
+                padding-left: 0;
+                background-position: -15px -73px;
+              }
+              &:hover:before {
+                background-position: -15px 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

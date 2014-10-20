@@ -824,6 +824,36 @@
               text-align: center; 
             }
           }
+          .bloc.bloc8 {
+            position: relative;
+            #tweet-prev,
+            #tweet-next {
+              position: absolute;
+              top: 0px;
+              width: 15px;
+              height: 100%;
+              padding: 0px;
+              background-repeat: no-repeat;
+              background-position: 50%;
+              cursor: pointer;
+              z-index: 1000;
+            }
+            #tweet-prev {
+              background-image: url('../images/icons/esqN.png');
+              left: 0px;
+              &:hover {
+                background-image: url('../images/icons/esqT.png');
+              }
+            }
+            #tweet-next {
+              background-image: url('../images/icons/dreN.png');
+              right: 0px;
+              &:hover {
+                background-image: url('../images/icons/dreT.png');
+              }
+            }
+ 
+          }
         }
       }
       & > .wrapper-blog {
@@ -871,6 +901,7 @@
               width: 100%;
               display: inline-block;
               text-align: center;
+              color: $naranja;
             }
             //font-weight: 600;
             .tabs {
@@ -937,6 +968,45 @@
                     color: $naranja;
                   }
                 }
+              }
+            }
+          }
+          .bloc.bloc4 {
+            border-top: 1px solid $marro_clar_trans;
+            margin-top: 10px;
+            padding-top: 16px;
+            position: relative;
+            .facebook_wall {
+              border: 0px none;
+              .post_link,
+              .wallContent_left {
+                display: none;
+              }
+            }
+            #fb-prev,
+            #fb-next {
+              position: absolute;
+              top: 0px;
+              width: 15px;
+              height: 100%;
+              padding: 0px;
+              background-repeat: no-repeat;
+              background-position: 50%;
+              cursor: pointer;
+              z-index: 1000;
+            }
+            #fb-prev {
+              background-image: url('../images/icons/esqN.png');
+              left: 0px;
+              &:hover {
+                background-image: url('../images/icons/esqT.png');
+              }
+            }
+            #fb-next {
+              background-image: url('../images/icons/dreN.png');
+              right: 0px;
+              &:hover {
+                background-image: url('../images/icons/dreT.png');
               }
             }
           }

@@ -80,9 +80,10 @@
            <?php print render($content['field_web']); ?>  
          </div>
          <div id="xxss" class="camp"> 
-           <?php print render($content['field_web']); ?>  
+           <a href="<?php print render($content['field_twitter]']); ?>" class="ic-twt" target="_blank"></a>
+           <a href="<?php print render($content['field_facebook]']); ?>" class="ic-fb" target="_blank"></a>
+           <a href="<?php print render($content['field_g_plus]']); ?>" class="ic-gp" target="_blank"></a>
          </div>
-       </div>
        </div>
        <div id="dreta-sup" class="col3 columna-sup">  
        <div id=criteris-titol> <?php print t('Criteris'); ?> </div>
@@ -120,7 +121,6 @@
      <span class="filainf">
        <div id="esquerra-inf" class="col1 columna-inf">
           <div class="row">
-               <!-- VIEW DWL COMPTADOR DE PUNTS! -->
             <?php print views_embed_view('usuaris_punt_favorit', 'block_1', $node->nid); ?>
           </div>
           <?php print render($content['flag_favorit']); ?>
@@ -128,15 +128,26 @@
           <?php print views_embed_view('punts_similars', 'block_1', $node->nid, $node->nid); ?>
         </div>
        <div id="central-inf" class="col2 columna-inf">
-          <?php print render($content['links']); ?>
+          <?php if(!$logged_in) {print render($content['links']); }?>
           <?php print render($content['field_vota']); ?>
+          <h3 class='field-label show'><?php print t('Vote'); ?></h3>
           <?php print ('<span> Hi ha '.$node->comment_count.' comentaris </span>'); ?>
+          <?php if($comment_count > 0): ?>
+            <div class="comments-wrapper">
+             <div data-cycle-slides="article.comment" data-cycle-next="#cm-next" data-cycle-prev="#cm-prev" data-cycle-timeout="0" data-cycle-fx="scrollHorz" class="cycle-slideshow comments_slide">
+           <?php endif; ?>
            <?php print render($content['comments']); ?>
+          <?php if($comment_count > 0): ?>
+              </div>
+            <div id="cm-next"></div>
+            <div id="cm-prev"></div>
+            </div>
+          <?php endif; ?>
         </div>
        <div id="dreta-inf" class="col3 columna-inf">
          <div id=xxss> <?php print views_embed_view('xxss_del_node', 'block',$node->nid); ?> </div>
          <div id=compartir> Comparteix </div> <div id=iconacomp> </div>
-         <div id=blogs><?php print views_embed_view('portada_ultims_blogs', 'block'); ?> </div>
+         <div id=blogs><?php print views_embed_view('blogs_similar_al_punt', 'block_1'); ?> </div>
        </div>
      </span>
    </div>
@@ -151,3 +162,4 @@
 
 
 </article>
+<?php drupal_add_js(drupal_get_path('theme', 'pamapam') . '/js/punt_full.js'); ?>

@@ -25,4 +25,4 @@ global $base_url;
 $tit = $row->node_title;
 $url = $base_url . '/' . drupal_get_path_alias('node/' . $row->nid);
 ?>
-<a href="https://plus.google.com/share?url=<?php print $url; ?>"><?php print $output; ?></a>
+<a target="_blank"  href="https://plus.google.com/share?url=<?php print $url; ?>"><?php print $output; ?></a>

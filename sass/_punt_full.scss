@@ -408,6 +408,39 @@ body.node-type-punt-economia-solidaria {
     padding-top: 40px;
     background-color: $marro_blocs;
     display: block;
+    #similars-title,
+    #central-inf > span,
+    .view-id-blogs_similar_al_punt.view-display-id-block_1 .view-header p,
+    .view-id-portada_ultims_blogs.view-display-id-block .view-header p {
+      @include semi;
+      color: $naranja;
+      font-size: 18px;
+      width: 96%;
+      text-align: center;
+      line-height: 60px;
+      padding: 0px;
+      margin: 0 0 20px 0;
+      border-bottom: 2px solid $marro_clar_trans;
+      position: relative;
+      display: block;
+      &:before,
+      &:after {
+        content: ' ';
+        position: absolute;
+        display: block;
+        left: 50%;
+        top: 60px;
+        width: 0px;
+        height: 0px;
+        border: 5px solid transparent;
+        border-top: 5px solid $marro_blocs;
+      }
+      &:before {
+        top: 62px;
+        border: 5px solid transparent;
+        border-top: 5px solid $marro_clar_trans;
+      }
+    }
     a {
       color: $naranja;
     }
@@ -415,45 +448,64 @@ body.node-type-punt-economia-solidaria {
       .row {
         width: 100%;
         .view-id-usuaris_punt_favorit.view-display-id-block_1 {
-          width: 50%;
-          float: right;
-          position: relative;
-          .views-row {
-            a {
-              display: inline-block;
-              line-height: 0px;
-              border-radius: 60%;
-              overflow: hidden;
-              width: 50px;
-              height: 50px;
-              margin-right: 12px;
+          .view-header {
+            width: 40%;
+            float: left;
+            margin-top: -12px;
+            margin-bottom: 12px;
+            #total {
+              float: left;
+              font-size: 24px;
+              font-family: 'titregular';
+              color: $naranja;
+            }
+            #totaltext {
+              clear: both;
+              font-size: 14px;
+              line-height: 16px;
             }
           }
-          #usr-prev,
-          #usr-next {
-            content: ' ';
-            position: absolute;
-            width: 15px;
-            height: 50px;
-            display: block;
-                background-color: white;
-                top: 0px;
-                cursor: pointer;
-                background-position: 50%;
-                background-repeat: no-repeat;
+          .view-content {
+            width: 50%;
+            float: right;
+            position: relative;
+            .views-row {
+              a {
+                display: inline-block;
+                line-height: 0px;
+                border-radius: 60%;
+                overflow: hidden;
+                width: 50px;
+                height: 50px;
+                margin-right: 12px;
               }
-              #usr-prev {
-                left: -30px;
-                background-image: url('../images/icons/esqN.png');
-                &:hover {
-                  background-image: url('../images/icons/esqT.png');
+            }
+            #usr-prev,
+            #usr-next {
+              content: ' ';
+              position: absolute;
+              width: 15px;
+              height: 50px;
+              display: block;
+                  background-color: white;
+                  top: 0px;
+                  cursor: pointer;
+                  background-position: 50%;
+                  background-repeat: no-repeat;
                 }
-              }
-              #usr-next {
-                right: 30px;
-                background-image: url('../images/icons/dreN.png');
-                &:hover {
-                  background-image: url('../images/icons/dreT.png');
+                #usr-prev {
+                  left: -30px;
+                  background-image: url('../images/icons/esqN.png');
+                  &:hover {
+                    background-image: url('../images/icons/esqT.png');
+                  }
+                }
+                #usr-next {
+                  right: 30px;
+                  background-image: url('../images/icons/dreN.png');
+                  &:hover {
+                    background-image: url('../images/icons/dreT.png');
+                  }
                 }
               }
             }
@@ -487,11 +539,39 @@ body.node-type-punt-economia-solidaria {
               }
             }
           }
+          .view-id-punts_similars.view-display-id-block_1 {
+            .views-row {
+              .titol a {
+                font-family: 'titbold';
+              }
+              .adreca {
+                font-size: 14px;
+                display: inline;
+                font-family: 'titlight';
+                * {
+                  display: inline;
+                }
+              }
+              .territori { 
+                font-size: 14px;
+                display: inline;
+                font-family: 'titbold';
+                text-transform: uppercase;
+              }
+              .resum {
+                line-height: 16px;
+              }
+            }
+          }
         }
         #central-inf {
           h3.field-label {
+            display: none;
+          }
+          h3.field-label.show {
             @include h3;
             width: 100%;
+            margin-top: 32px;
             position: relative;
             text-align: center;
             padding: 8px 0;
@@ -514,10 +594,132 @@ body.node-type-punt-economia-solidaria {
               border-left: 1px solid white;
             }
           }
+          .print_mail,
+          .print_pdf {
+            display: none;
+          }
+          .comments-wrapper {
+            position: relative;
+            .comments_slide {
+              margin-left: 5%;
+            }
+            .comments_slide,
+            #comments {
+              article {
+                header {
+                  display: none;
+                }
+              }
+              article.comment {
+                background-color: white;
+                width: 94%;
+                min-height: 52px;
+                padding: 6px 0;
+                & > .links,
+                & > .rdf-meta {
+                  display: none;
+                }
+                & > * {
+                  padding: 0 12px;
+                }
+              }
+            }
+            #cm-prev,
+            #cm-next {
+              position: absolute;
+              top: 0px;
+              width: 15px;
+              height: 100%;
+              padding: 0px;
+              background-repeat: no-repeat;
+              background-position: 50%;
+              cursor: pointer;
+              z-index: 1000;
+            }
+            #cm-prev {
+              background-image: url('../images/icons/esqN.png');
+              left: 0px;
+              &:hover {
+                background-image: url('../images/icons/esqT.png');
+              }
+            }
+            #cm-next {
+              background-image: url('../images/icons/dreN.png');
+              right: 0px;
+              &:hover {
+                background-image: url('../images/icons/dreT.png');
+              }
+            }
+          }
+          h2.comments__form-title {
+            display: none;
+          }
+          form.comment-form > div > div.form-type-item {
+            display: none;
+          }
+          form.comment-form {
+            textarea {
+              border: 2px solid rgb(170, 170, 170);
+              @include border-radius(2px);
+              @include box-shadow(transparent 0 0 0);
+              font-family: 'titregular';
+              padding: 2px 6px;
+              color: $negro;
+              height: 32px;
+              @include transition-property(height);
+              &:focus {
+                border: 2px solid $naranja;
+                @include box-shadow(transparent 0 0 0);
+                height: 160px;
+              }
+            }
+            #edit-submit {
+              width: 100%;
+              border: 0px none;
+              @include border-radius(2px);
+              background-color: $negro;
+              color: white;
+              height: 32px;
+              margin-bottom: 45px;
+            }
+          }
+          form.comment-form > div label {
+            display: none;
+          }
+          h2.comments__title {
+            display: none;
+          }
+          .field-name-field-vota {
+            .star {
+              width: 26px;
+              height: 26px;
+              background-image: none;
+              padding: 0 8px;
+              span {
+                background-repeat: no-repeat;
+                background-position: 0 0;
+              }
+              span.off {
+                background-image: url('../images/icons/est.png');
+                background-position: 0 0;
+              }
+              &.hover > *,
+              &:hover > *,
+              span.on {
+                background-image: url('../images/icons/estR.png');
+                background-position: 0 0;
+              }
+              a {
+                background-image: url('../images/icons/est.png');
+                background-position: 0 0;
+              }
+            }
+          }
         }
         #dreta-inf {
           #compartir {
             @include caixa($marro_clar);
+            margin-bottom: 22px;
             &:after {
               @include caixa_after;
               background-image:url('../images/icons/compB.png');
@@ -589,7 +791,13 @@ body.node-type-punt-economia-solidaria {
               .view-header {
                               }
               .views-row {
+                margin-bottom: 18px;
                 @include blog;
+                .blog-top {
+                  padding: 18px;
+                }
+                .blog-foot {
+                }
               }
             }
           }

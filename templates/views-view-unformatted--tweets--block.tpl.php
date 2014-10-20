@@ -12,7 +12,7 @@
 <?php endif; ?>
 <div class="cycle-slideshow"
     data-cycle-fx="scrollHorz"
-    data-cycle-timeout="3000"
+    data-cycle-timeout="0"
     data-cycle-prev="#tweet-prev"
     data-cycle-next="#tweet-next"
     data-cycle-slides="> div.views-row"
