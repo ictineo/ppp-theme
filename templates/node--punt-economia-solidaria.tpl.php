@@ -30,7 +30,7 @@
             <?php print render($content['field_fotografia']); ?>  
           </div>
           <div id="desde" class="camp"> 
-            <?php   print ('Membre desde '.render($content['field_membre_desde'])); ?>  
+            <?php   print (t('Member since').render($content['field_membre_desde'])); ?>  
           </div>
           <div id="links" class="camp"> 
           </div>
@@ -80,9 +80,9 @@
            <?php print render($content['field_web']); ?>  
          </div>
          <div id="xxss" class="camp"> 
-           <a href="<?php print render($content['field_twitter]']); ?>" class="ic-twt" target="_blank"></a>
-           <a href="<?php print render($content['field_facebook]']); ?>" class="ic-fb" target="_blank"></a>
-           <a href="<?php print render($content['field_g_plus]']); ?>" class="ic-gp" target="_blank"></a>
+           <a href="<?php print render($content['field_twitter']); ?>" class="ic-twt" target="_blank"></a>
+           <a href="<?php print render($content['field_facebook']); ?>" class="ic-fb" target="_blank"></a>
+           <a href="<?php print render($content['field_g_plus']); ?>" class="ic-gp" target="_blank"></a>
          </div>
        </div>
        <div id="dreta-sup" class="col3 columna-sup">  
@@ -105,7 +105,7 @@
                 if(isset($valor2[LANGUAGE_NONE]['0']['value'])) {?> 
                     <div class="<?php print($key4.' criteri');?>">
                        <div class="puntuacio valor<?php print($valor2[LANGUAGE_NONE]['0']['value']);?>">
-                          <div class="text"> <?php print explode(',', variable_get('ppp_mapes_keys_field_avaluacio_criteri' . $num_criteri, ''), 2)[0]; ?> </div>
+                          <div class="text"> <?php print explode(',', variable_get('ppp_mapes_keys_field_avaluacio_criteri' . str_replace('field_avaluacio_criteri','',$key4) , ''), 2)[0]; ?> </div>
                        </div>
                    </div>  
 <?php           }

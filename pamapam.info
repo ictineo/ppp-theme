@@ -71,6 +71,13 @@ scripts[] = js/jquery.cycle2.min.js
 scripts[] = js/jquery.cycle2.carousel.min.js
 scripts[] = js/slimscroll/jquery.slimscroll.min.js
 scripts[] = js/placeholders.js
+scripts[] = js/jqplot/jquery.jqplot.min.js
+scripts[] = js/jqplot/plugins/jqplot.donutRenderer.min.js
+scripts[] = js/jqplot/plugins/jqplot.pieRenderer.min.js
+scripts[] = js/jqplot/plugins/jqplot.barRenderer.min.js
+scripts[] = js/jqplot/plugins/jqplot.categoryAxisRenderer.min.js
+scripts[] = js/jqplot/plugins/jqplot.pointlabels.min.js
+
 
 
 

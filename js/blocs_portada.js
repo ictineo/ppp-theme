@@ -16,6 +16,15 @@
 // To understand behaviors, see https://drupal.org/node/756722#behaviors
 Drupal.behaviors.ppp_blocs_portada = {
   attach: function(context, settings) {
+    $("#edit-s1").keypress(function(e){
+      var content=$(this).val().length;
+      if(e.which==13&&content!=0){
+        $('body').animate({
+          scrollTop:($('#map-wrapper').offset().top-50)
+        },500);
+       
+      }
+    });
     if(jQuery('body').hasClass('front')) {
       jQuery('#content .dalt .bloc3 .view-ultims-comentaris.view-id-ultims_comentaris').hide();
       jQuery('#content .dalt .bloc3 .view-portada-ultims-usuaris.view-id-portada_ultims_usuaris').hide();

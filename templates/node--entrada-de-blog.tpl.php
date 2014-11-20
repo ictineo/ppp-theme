@@ -44,7 +44,9 @@
       <h4 class="bloc-label"><?php print t('Published by'); ?></h4>
       <span class="data"><?php print date('d/m/Y', $node->changed); ?>, <?php print t('by'); ?> <?php print $node->name; ?></span>
     </div>
-    <?php print render($content['field_etiquetes']); ?>
+    <div class="etiquetes-wrapper">
+      <?php print render($content['field_etiquetes']); ?>
+    </div>
     <?php print views_embed_view('blogs_similar_al_punt', 'entity_view_2', $node->nid); ?>
     <?php print views_embed_view('xxss_del_node', 'block'); ?>
     <?php print render($content['comments']); ?>

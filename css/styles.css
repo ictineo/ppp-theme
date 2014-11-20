@@ -5121,11 +5121,132 @@ body.node-type-entrada-de-blog #main #content #sec-col {
   word-wrap: break-word;
 }
 /* line 15, ../sass/_blog_full.scss */
+body.node-type-entrada-de-blog #main #content .view-id-blogs_similar_al_punt.view-display-id-entity_view_2 .view-header p,
+body.node-type-entrada-de-blog #main #content h4.bloc-label,
+body.node-type-entrada-de-blog #main #content h3.field-label,
+body.node-type-entrada-de-blog #main #content h2.comments__form-title {
+  font-family: 'titbold';
+  line-height: 18px;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  color: #ff9839;
+  font-size: 18px;
+  width: 96%;
+  text-align: center;
+  line-height: 60px;
+  padding: 0px;
+  margin: 0 0 20px 0;
+  border-bottom: 2px solid rgba(196, 175, 148, 0.6);
+  position: relative;
+  display: block;
+}
+/* line 28, ../sass/_blog_full.scss */
+body.node-type-entrada-de-blog #main #content .view-id-blogs_similar_al_punt.view-display-id-entity_view_2 .view-header p:before, body.node-type-entrada-de-blog #main #content .view-id-blogs_similar_al_punt.view-display-id-entity_view_2 .view-header p:after,
+body.node-type-entrada-de-blog #main #content h4.bloc-label:before,
+body.node-type-entrada-de-blog #main #content h4.bloc-label:after,
+body.node-type-entrada-de-blog #main #content h3.field-label:before,
+body.node-type-entrada-de-blog #main #content h3.field-label:after,
+body.node-type-entrada-de-blog #main #content h2.comments__form-title:before,
+body.node-type-entrada-de-blog #main #content h2.comments__form-title:after {
+  content: ' ';
+  position: absolute;
+  display: block;
+  left: 50%;
+  top: 60px;
+  width: 0px;
+  height: 0px;
+  border: 5px solid transparent;
+  border-top: 5px solid #efe8de;
+}
+/* line 39, ../sass/_blog_full.scss */
+body.node-type-entrada-de-blog #main #content .view-id-blogs_similar_al_punt.view-display-id-entity_view_2 .view-header p:before,
+body.node-type-entrada-de-blog #main #content h4.bloc-label:before,
+body.node-type-entrada-de-blog #main #content h3.field-label:before,
+body.node-type-entrada-de-blog #main #content h2.comments__form-title:before {
+  top: 62px;
+  border: 5px solid transparent;
+  border-top: 5px solid rgba(196, 175, 148, 0.6);
+}
+/* line 47, ../sass/_blog_full.scss */
+body.node-type-entrada-de-blog #main #content #main-col h2.node-title {
+  text-align: center;
+  color: #ff9839;
+}
+/* line 53, ../sass/_blog_full.scss */
+body.node-type-entrada-de-blog #main #content #sec-col .publish-info {
+  text-align: center;
+}
+/* line 56, ../sass/_blog_full.scss */
+body.node-type-entrada-de-blog #main #content #sec-col .etiquetes-wrapper {
+  text-align: center;
+}
+/* line 58, ../sass/_blog_full.scss */
+body.node-type-entrada-de-blog #main #content #sec-col .etiquetes-wrapper .field {
+  display: inline-block;
+  background-color: #9eafb2;
+  padding: 2px 8px;
+  margin: 4px;
+}
+/* line 66, ../sass/_blog_full.scss */
+body.node-type-entrada-de-blog #main #content #sec-col .view-id-blogs_similar_al_punt.view-display-id-entity_view_2 .views-row {
+  margin-bottom: 12px;
+  text-align: center;
+}
+/* line 75, ../sass/_mixinsppp.scss */
+body.node-type-entrada-de-blog #main #content #sec-col .view-id-blogs_similar_al_punt.view-display-id-entity_view_2 .views-row .blog-top {
+  background-color: #1fcba9;
+  border-bottom: 2px solid #1ba88d;
+  padding: 30px 30px 0;
+}
+/* line 79, ../sass/_mixinsppp.scss */
+body.node-type-entrada-de-blog #main #content #sec-col .view-id-blogs_similar_al_punt.view-display-id-entity_view_2 .views-row .blog-top a {
+  font-family: 'titregular';
+  line-height: 20px;
+  font-size: 18px;
+  color: #ffffff;
+}
+/* line 83, ../sass/_mixinsppp.scss */
+body.node-type-entrada-de-blog #main #content #sec-col .view-id-blogs_similar_al_punt.view-display-id-entity_view_2 .views-row .blog-top p {
+  font-family: 'titthin';
+  line-height: 20px;
+  font-size: 13px;
+  background-color: #1fcba9;
+  color: #ffffff;
+  border-top: 2px solid #3cb99b;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+/* line 90, ../sass/_mixinsppp.scss */
+body.node-type-entrada-de-blog #main #content #sec-col .view-id-blogs_similar_al_punt.view-display-id-entity_view_2 .views-row .blog-top p a {
+  font-family: 'titthin';
+  line-height: 20px;
+  font-size: 13px;
+  color: #495154;
+}
+/* line 93, ../sass/_mixinsppp.scss */
+body.node-type-entrada-de-blog #main #content #sec-col .view-id-blogs_similar_al_punt.view-display-id-entity_view_2 .views-row .blog-top p a:hover {
+  color: #2c2a28;
+}
+/* line 99, ../sass/_mixinsppp.scss */
+body.node-type-entrada-de-blog #main #content #sec-col .view-id-blogs_similar_al_punt.view-display-id-entity_view_2 .views-row .blog-foot {
+  background-color: #1ba88d;
+  font-family: 'titthin';
+  line-height: 18px;
+  font-size: 14px;
+  color: #ffffff;
+  padding: 5px 0;
+}
+/* line 69, ../sass/_blog_full.scss */
+body.node-type-entrada-de-blog #main #content #sec-col .view-id-blogs_similar_al_punt.view-display-id-entity_view_2 .views-row .blog-top {
+  padding: 18px;
+}
+/* line 75, ../sass/_blog_full.scss */
 body.node-type-entrada-de-blog #main #content #sec-col .view-id-xxss_del_node.view-display-id-block {
+  margin-top: 35px;
   margin-bottom: 35px;
   text-align: center;
 }
-/* line 19, ../sass/_blog_full.scss */
+/* line 80, ../sass/_blog_full.scss */
 body.node-type-entrada-de-blog #main #content #sec-col .view-id-xxss_del_node.view-display-id-block .fb-wrapper a {
   color: #c4af94;
   font-family: 'titlight';
@@ -5135,7 +5256,7 @@ body.node-type-entrada-de-blog #main #content #sec-col .view-id-xxss_del_node.vi
   font-size: 20px;
   margin: 0 15px;
 }
-/* line 24, ../sass/_blog_full.scss */
+/* line 85, ../sass/_blog_full.scss */
 body.node-type-entrada-de-blog #main #content #sec-col .view-id-xxss_del_node.view-display-id-block .fb-wrapper a:before {
   content: ' ';
   display: inline-block;
@@ -5150,11 +5271,11 @@ body.node-type-entrada-de-blog #main #content #sec-col .view-id-xxss_del_node.vi
   padding-left: 0;
   background-position: 0px -73px;
 }
-/* line 32, ../sass/_blog_full.scss */
+/* line 93, ../sass/_blog_full.scss */
 body.node-type-entrada-de-blog #main #content #sec-col .view-id-xxss_del_node.view-display-id-block .fb-wrapper a:hover:before {
   background-position: 0px 0px;
 }
-/* line 38, ../sass/_blog_full.scss */
+/* line 99, ../sass/_blog_full.scss */
 body.node-type-entrada-de-blog #main #content #sec-col .view-id-xxss_del_node.view-display-id-block .gp-wrapper a {
   color: #c4af94;
   font-family: 'titlight';
@@ -5164,7 +5285,7 @@ body.node-type-entrada-de-blog #main #content #sec-col .view-id-xxss_del_node.vi
   font-size: 20px;
   margin: 0 15px;
 }
-/* line 43, ../sass/_blog_full.scss */
+/* line 104, ../sass/_blog_full.scss */
 body.node-type-entrada-de-blog #main #content #sec-col .view-id-xxss_del_node.view-display-id-block .gp-wrapper a:before {
   content: ' ';
   display: inline-block;
@@ -5179,11 +5300,11 @@ body.node-type-entrada-de-blog #main #content #sec-col .view-id-xxss_del_node.vi
   padding-left: 0;
   background-position: -102px -73px;
 }
-/* line 51, ../sass/_blog_full.scss */
+/* line 112, ../sass/_blog_full.scss */
 body.node-type-entrada-de-blog #main #content #sec-col .view-id-xxss_del_node.view-display-id-block .gp-wrapper a:hover:before {
   background-position: -102px 0px;
 }
-/* line 57, ../sass/_blog_full.scss */
+/* line 118, ../sass/_blog_full.scss */
 body.node-type-entrada-de-blog #main #content #sec-col .view-id-xxss_del_node.view-display-id-block .tw-wrapper a {
   color: #c4af94;
   font-family: 'titlight';
@@ -5193,7 +5314,7 @@ body.node-type-entrada-de-blog #main #content #sec-col .view-id-xxss_del_node.vi
   font-size: 20px;
   margin: 0 15px;
 }
-/* line 62, ../sass/_blog_full.scss */
+/* line 123, ../sass/_blog_full.scss */
 body.node-type-entrada-de-blog #main #content #sec-col .view-id-xxss_del_node.view-display-id-block .tw-wrapper a:before {
   content: ' ';
   display: inline-block;
@@ -5208,7 +5329,7 @@ body.node-type-entrada-de-blog #main #content #sec-col .view-id-xxss_del_node.vi
   padding-left: 0;
   background-position: -15px -73px;
 }
-/* line 70, ../sass/_blog_full.scss */
+/* line 131, ../sass/_blog_full.scss */
 body.node-type-entrada-de-blog #main #content #sec-col .view-id-xxss_del_node.view-display-id-block .tw-wrapper a:hover:before {
   background-position: -15px 0px;
 }
