@@ -9,10 +9,71 @@ body.node-type-entrada-de-blog {
       #sec-col {
         @include zen-grid-item(4,9);
       }
+      .view-id-blogs_similar_al_punt.view-display-id-entity_view_2 .view-header p,
+      h4.bloc-label,
+      h3.field-label,
+      h2.comments__form-title {
+        @include semi;
+        color: $naranja;
+        font-size: 18px;
+        width: 96%;
+        text-align: center;
+        line-height: 60px;
+        padding: 0px;
+        margin: 0 0 20px 0;
+        border-bottom: 2px solid $marro_clar_trans;
+        position: relative;
+        display: block;
+        &:before,
+        &:after {
+          content: ' ';
+          position: absolute;
+          display: block;
+          left: 50%;
+          top: 60px;
+          width: 0px;
+          height: 0px;
+          border: 5px solid transparent;
+          border-top: 5px solid $marro_blocs;
+        }
+        &:before {
+          top: 62px;
+          border: 5px solid transparent;
+          border-top: 5px solid $marro_clar_trans;
+        }
+      }
+   
       #main-col {
+        h2.node-title {
+          text-align: center;
+          color: $naranja;
+        }
       }
       #sec-col {
+        .publish-info {
+          text-align: center;
+        }
+        .etiquetes-wrapper {
+          text-align: center;
+          .field {
+            display: inline-block;
+            background-color: $gris_clar;
+            padding: 2px 8px;
+            margin: 4px;
+          }
+        }
+        .view-id-blogs_similar_al_punt.view-display-id-entity_view_2 {
+          .views-row {
+            margin-bottom: 12px;
+            @include blog;
+            .blog-top {
+              padding: 18px;
+            }
+          }
+        }
+
         .view-id-xxss_del_node.view-display-id-block  {
+          margin-top: 35px;
           margin-bottom: 35px;
           text-align: center;
           .fb-wrapper {

@@ -93,7 +93,7 @@
              <?php print views_embed_view('portada_ultims_punts','block'); ?>
            </div> 
            <div class="bloc bloc4"> 
-           <a href="https://www.facebook.com/sharer/sharer.php?u=<?php global $base_url; print $base_url; ?>"><img src="<?php print $base_path; ?>/sites/all/themes/pamapam/images/bloc_fb_cap.png" /></a>
+           <a href="https://www.facebook.com/sharer/sharer.php?u=<?php global $base_url; print $base_url; ?>"><img src="<?php print $base_path; ?>sites/all/themes/pamapam/images/bloc_fb_cap.png" /></a>
                <div data-cycle-slides="> div > .facebook_wall" data-cycle-next="#fb-next" data-cycle-prev="#fb-prev" data-cycle-timeout="0" data-cycle-fx="scrollHorz" class="cycle-slideshow">
                <?php
                $block = module_invoke('facebook_wall','block_view','facebook_wall');        

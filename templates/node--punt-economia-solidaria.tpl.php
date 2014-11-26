@@ -30,7 +30,7 @@
             <?php print render($content['field_fotografia']); ?>  
           </div>
           <div id="desde" class="camp"> 
-            <?php   print ('Membre desde '.render($content['field_membre_desde'])); ?>  
+            <?php print (t('Member since ').render($content['field_membre_desde'])); ?>  
           </div>
           <div id="links" class="camp"> 
           </div>
@@ -86,7 +86,7 @@
          </div>
        </div>
        <div id="dreta-sup" class="col3 columna-sup">  
-       <div id=criteris-titol> <?php print t('Criteris'); ?> </div>
+       <div id=criteris-titol> <?php print t('Criteria'); ?> </div>
        <span class="criteri-wrapper">
       <?php
         $arrayaux = array();           
@@ -105,7 +105,7 @@
                 if(isset($valor2[LANGUAGE_NONE]['0']['value'])) {?> 
                     <div class="<?php print($key4.' criteri');?>">
                        <div class="puntuacio valor<?php print($valor2[LANGUAGE_NONE]['0']['value']);?>">
-                          <div class="text"> <?php print explode(',', variable_get('ppp_mapes_keys_field_avaluacio_criteri' . $num_criteri, ''), 2)[0]; ?> </div>
+                          <div class="text"> <?php print explode(',', variable_get('ppp_mapes_keys_field_avaluacio_criteri' .  str_replace('field_avaluacio_criteri','',$key4) , ''), 2)[0]; ?> </div>
                        </div>
                    </div>  
 <?php           }
