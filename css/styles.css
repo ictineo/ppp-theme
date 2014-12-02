@@ -3212,8 +3212,6 @@ a {
 /* line 764, ../sass/_home.scss */
 .front #main #content > .contenidor .dalt .bloc4 {
   float: left;
-  height: 230px;
-  overflow: auto;
   width: 25%;
   margin-left: 75%;
   margin-right: -100%;
@@ -5336,6 +5334,48 @@ body.node-type-entrada-de-blog #main #content #sec-col .view-id-xxss_del_node.vi
   background-position: -15px 0px;
 }
 
+/*Estils pel llistat de blogs*/
+@media all and (min-width: 960px) {
+  /* line 46, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+  .page-blogs .view-llistat-de-blogs:before, .page-blogs .view-llistat-de-blogs:after {
+    content: "";
+    display: table;
+  }
+  /* line 50, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+  .page-blogs .view-llistat-de-blogs:after {
+    clear: both;
+  }
+  /* line 14, ../sass/_blog_list.scss */
+  .page-blogs .view-llistat-de-blogs .views-row.views-row-odd {
+    clear: left;
+    float: left;
+    width: 25%;
+    margin-left: 0%;
+    margin-right: -25%;
+    padding-left: 8px;
+    padding-right: 8px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  /* line 18, ../sass/_blog_list.scss */
+  .page-blogs .view-llistat-de-blogs .views-row.views-row-even {
+    float: left;
+    width: 25%;
+    margin-left: 25%;
+    margin-right: -50%;
+    padding-left: 8px;
+    padding-right: 8px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+}
+
 /* Footer Pam a Pam */
 /* line 3, ../sass/_footer.scss */
 .contenidor-footer {
@@ -5882,373 +5922,6 @@ body.node-type-entrada-de-blog #main #content #sec-col .view-id-xxss_del_node.vi
 .page-user.page-user #page #main #content .profile dd ul li a:hover {
   color: #2c2a28;
 }
-
-/* Pagina estatica sense scss */
-
-.node-type-page article {
-  background-color: #f6f6f1;
-  padding: 20px;
-}
-.node-type-page .field-name-body .tit_anchor.desti {
-  color: #ff9839;
-  display: block;
-  font-family: 'titsemibold_upright';
-  font-size: 24px;
-  letter-spacing: 0.3px;
-  line-height: 29px;
-  margin-bottom: 12px;
-  width: 100%;
-}
-.node-type-page .field-name-body .cos, 
-.node-type-page .field-name-body .cos p {
-  font-size: 14px;
-  line-height: 20px;
-  margin-top: 0px;
-}
-.node-type-page .field-name-body .tit_seccio {
-  color: #1fcba9;
-  font-family: 'titregular';
-  line-height: 16px;
-  font-size: 18px;
-  padding-left: 10px;
-  margin-bottom: 5px;
-}
-.node-type-page .field-name-body .col1, 
-.node-type-page .field-name-body .col2, 
-.node-type-page .field-name-body .col3 {
-  width: 27%;
-  float: left;
-  padding-left: 60px;
-} 
-.node-type-page .field-name-body ul {
-  list-style: none; 
-  margin-bottom: 30px;
-}
-.node-type-page .field-name-body .criteris li {
-  font-family: 'titbold';
-  /*color: #ff9839;*/
-  font-size: 14px;
-  line-height: 40px;
-}
-li#a:before {
-  content: ' ';
-  display: inline-block;
-  background:url('../images/icons/criteris/CprT.png') no-repeat;
-  width: 15px;
-  height: 18px;
-  padding-right: 10px
-}
-li#b:before {
-  content: ' ';
-  display: inline-block;
-  background:url('../images/icons/criteris/CcjT.png') no-repeat;
-  width: 15px;
-  height: 18px;
-  padding-right: 10px
-}
-li#c:before {
-  content: ' ';
-  display: inline-block;
-  background:url('../images/icons/criteris/CtrT.png') no-repeat;
-  width: 15px;
-  height: 18px;
-  padding-right: 10px
-}
-li#d:before {
-  content: ' ';
-  display: inline-block;
-  background:url('../images/icons/criteris/CisT.png') no-repeat;
-  width: 15px;
-  height: 18px;
-  padding-right: 10px
-}
-li#e:before {
-  content: ' ';
-  display: inline-block;
-  background:url('../images/icons/criteris/CinT.png') no-repeat;
-  width: 15px;
-  height: 18px;
-  padding-right: 10px
-}
-li#f:before {
-  content: ' ';
-  display: inline-block;
-  background:url('../images/icons/criteris/CxaT.png') no-repeat;
-  width: 15px;
-  height: 18px;
-  padding-right: 10px
-}
-li#g:before {
-  content: ' ';
-  display: inline-block;
-  background:url('../images/icons/criteris/CbeT.png') no-repeat;
-  width: 15px;
-  height: 18px;
-  padding-right: 10px
-}
-li#h:before {
-  content: ' ';
-  display: inline-block;
-  background:url('../images/icons/criteris/CsoT.png') no-repeat;
-  width: 15px;
-  height: 18px;
-  padding-right: 10px
-}
-li#i:before {
-  content: ' ';
-  display: inline-block;
-  background:url('../images/icons/criteris/CgrT.png') no-repeat;
-  width: 15px;
-  height: 18px;
-  padding-right: 10px
-}
-li#j:before {
-  content: ' ';
-  display: inline-block;
-  background:url('../images/icons/criteris/CeeT.png') no-repeat;
-  width: 15px;
-  height: 18px;
-  padding-right: 10px
-}
-li#k:before {
-  content: ' ';
-  display: inline-block;
-  background:url('../images/icons/criteris/CfsT.png') no-repeat;
-  width: 15px;
-  height: 18px;
-  padding-right: 10px
-}
-li#l:before {
-  content: ' ';
-  display: inline-block;
-  background:url('../images/icons/criteris/CdpT.png') no-repeat;
-  width: 15px;
-  height: 18px;
-  padding-right: 10px
-}
-li#m:before {
-  content: ' ';
-  display: inline-block;
-  background:url('../images/icons/criteris/CegT.png') no-repeat;
-  width: 15px;
-  height: 18px;
-  padding-right: 10px
-}
-li#n:before {
-  content: ' ';
-  display: inline-block;
-  background:url('../images/icons/criteris/CdiT.png') no-repeat;
-  width: 15px;
-  height: 18px;
-  padding-right: 10px
-}
-li#o:before {
-  content: ' ';
-  display: inline-block;
-  background:url('../images/icons/criteris/CccT.png') no-repeat;
-  width: 15px;
-  height: 18px;
-  padding-right: 10px
-}
-.node-type-page .field-name-body .sectors li label {
-  display: inline-block;
-  color: #ff9839;
-}
-.node-type-page .field-name-body .sectors li {
-  font-family: 'titbold';
-  font-size: 14px;
-  line-height: 20px;
-  margin-bottom: 20px;
-}
-li#p:before {
-  content: ' ';
-  display: inline-block;
-  background:url('../images/map/hab.png') no-repeat;
-  width: 34px;
-  height: 47px;
-  padding-right: 10px
-}
-li#q:before {
-  content: ' ';
-  display: inline-block;
-  background:url('../images/map/ves.png') no-repeat;
-  width: 34px;
-  height: 47px;
-  padding-right: 10px
-}
-li#r:before {
-  content: ' ';
-  display: inline-block;
-  background:url('../images/map/ali.png') no-repeat;
-  width: 34px;
-  height: 47px;
-  padding-right: 10px
-}
-li#s:before {
-  content: ' ';
-  display: inline-block;
-  background:url('../images/map/cul.png') no-repeat;
-  width: 34px;
-  height: 47px;
-  padding-right: 10px
-}
-li#t:before {
-  content: ' ';
-  display: inline-block;
-  background:url('../images/map/edu.png') no-repeat;
-  width: 34px;
-  height: 47px;
-  padding-right: 10px
-}
-li#u:before {
-  content: ' ';
-  display: inline-block;
-  background:url('../images/map/tec.png') no-repeat;
-  width: 34px;
-  height: 47px;
-  padding-right: 10px
-}
-li#v:before {
-  content: ' ';
-  display: inline-block;
-  background:url('../images/map/cur.png') no-repeat;
-  width: 34px;
-  height: 47px;
-  padding-right: 10px
-}
-li#w:before {
-  content: ' ';
-  display: inline-block;
-  background:url('../images/map/oci.png') no-repeat;
-  width: 34px;
-  height: 47px;
-  padding-right: 10px
-}
-li#x:before {
-  content: ' ';
-  display: inline-block;
-  background:url('../images/map/fin.png') no-repeat;
-  width: 34px;
-  height: 47px;
-  padding-right: 10px
-}
-li#y:before {
-  content: ' ';
-  display: inline-block;
-  background:url('../images/map/ase.png') no-repeat;
-  width: 34px;
-  height: 47px;
-  padding-right: 10px
-}
-li#z:before {
-  content: ' ';
-  display: inline-block;
-  background:url('../images/map/log.png') no-repeat;
-  width: 34px;
-  height: 47px;
-  padding-right: 10px
-}
-li#zz:before {
-  content: ' ';
-  display: inline-block;
-  background:url('../images/map/xar.png') no-repeat;
-  width: 34px;
-  height: 47px;
-  padding-right: 10px
-}
-.node-type-page .field-name-body .sectors,
-.node-type-page .field-name-body .territ {
-  clear: both;
-}
-.node-type-page .field-name-body .menu_intern {
-  margin-bottom: 20px;
-}
-.node-type-page .field-name-body .menu_intern a {
-  color: #1fcba9;
-  font-family: 'titregular';
-  font-size: 14px;
-}
-.node-type-page .field-name-body .menu_intern a:hover {
-  color: #2c2a28;
-}
-
-.node-type-page .field-name-body .setem,
-.node-type-page .field-name-body .xes {
-  width: 40%;
-  float: left;
-  padding-left: 90px;
-  margin-top: 20px;
-}
-
-.node-type-page .field-name-body .contact {
-  clear: both;
-  text-align: center;
-}
-
-.node-type-page .field-name-body .setem .tit_seccio:before {
-  content: '';
-  display: inline-block;
-  background: url('../../../../default/files/tema/setem.png') no-repeat;
-  width: 80px;
-  height: 60px;
-}
-.node-type-page .field-name-body .xes .tit_seccio:before {
-  content: '';
-  display: inline-block;
-  background: url('../../../../default/files/tema/xes.png') no-repeat;
-  width: 80px;
-  height: 60px;
-}
-.node-type-page .field-name-body a {
-  color: #1fcba9;
-}
-.node-type-page .field-name-body a:hover {
-  color: #2c2a28;
-}
-.node-type-page .field-name-body .contact .dinamic #col1 {
-  margin-top: 10px;
-}
-.node-type-page .field-name-body .credits label {
-  display: inline-block;
-  color: #ff9839;
-}
-.node-type-page .field-name-body .suport {
-  text-align: right;
-}
-.node-type-page .field-name-body .suport .logo1:before {
-  content: '';
-  display: inline-block;
-  background: url('../../../../default/files/tema/eea.png') no-repeat;
-  width: 120px;
-  height: 108px;
-  margin: 10px;
-  float: right;
-}
-.node-type-page .field-name-body .suport .logo2:before {
-  content: '';
-  display: inline-block;
-  background: url('../../../../default/files/tema/pdo.png') no-repeat;
-  width: 120px;
-  height: 80px;
-  margin: 10px;
-  float: right;
-
-}
-.node-type-page .field-name-body .suport .logo3:before {
-  content: '';
-  display: inline-block;
-  background: url('../../../../default/files/tema/bcnsol.png') no-repeat;
-  width: 150px;
-  height: 80px;
-  margin: 10px;
-  float: right;
-}
-.node-type-page .field-name-body .imatge {
-margin-top: 10px;
-}
-
-
-
 
 /* SMACSS theme rules */
 /* @import "theme-A"; */

@@ -1,0 +1,27 @@
+/*Estils pel llistat de blogs*/
+
+.page-taxonomy,
+.page-blogs {
+  @media all and (min-width: 480px) {
+    $zen-column-count: 1;
+  }
+  @media all and (min-width: 480px) and (max-width: 959px) {
+    $zen-column-count: 3;
+  }
+  @media all and (min-width: 960px) {
+    $zen-column-count: 12;
+    .view-llistat-de-blogs {
+      @include zen-grid-container();
+      .views-row.views-row-odd {
+        @include zen-clear();
+        @include zen-grid-item(3,1);
+      }
+      .views-row.views-row-even {
+        @include zen-grid-item(3,4);
+      }
+    }
+  }
+}
+
+
+
