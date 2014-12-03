@@ -4895,7 +4895,11 @@ body.node-type-punt-economia-solidaria article.node-punt-economia-solidaria #gen
   background-image: url("../images/icons/est.png");
   background-position: 0 0;
 }
-/* line 720, ../sass/_punt_full.scss */
+/* line 717, ../sass/_punt_full.scss */
+body.node-type-punt-economia-solidaria article.node-punt-economia-solidaria #general-wrapper .filainf #central-inf .field-name-field-vota #edit_vote__4_chosen.chosen-container.chosen-container-single.form-select {
+  visibility: hidden !important;
+}
+/* line 723, ../sass/_punt_full.scss */
 body.node-type-punt-economia-solidaria article.node-punt-economia-solidaria #general-wrapper .filainf #dreta-inf #compartir {
   font-family: 'titthin';
   line-height: 24px;
@@ -4915,7 +4919,7 @@ body.node-type-punt-economia-solidaria article.node-punt-economia-solidaria #gen
   border-radius: 2px;
   margin-bottom: 22px;
 }
-/* line 723, ../sass/_punt_full.scss */
+/* line 726, ../sass/_punt_full.scss */
 body.node-type-punt-economia-solidaria article.node-punt-economia-solidaria #general-wrapper .filainf #dreta-inf #compartir:after {
   content: ' ';
   display: block;
@@ -4929,12 +4933,12 @@ body.node-type-punt-economia-solidaria article.node-punt-economia-solidaria #gen
   border-left: 1px solid white;
   background-image: url("../images/icons/compB.png");
 }
-/* line 728, ../sass/_punt_full.scss */
+/* line 731, ../sass/_punt_full.scss */
 body.node-type-punt-economia-solidaria article.node-punt-economia-solidaria #general-wrapper .filainf #dreta-inf #xxss {
   margin-bottom: 35px;
   text-align: center;
 }
-/* line 732, ../sass/_punt_full.scss */
+/* line 735, ../sass/_punt_full.scss */
 body.node-type-punt-economia-solidaria article.node-punt-economia-solidaria #general-wrapper .filainf #dreta-inf #xxss .fb-wrapper a {
   color: #c4af94;
   font-family: 'titlight';
@@ -4944,7 +4948,7 @@ body.node-type-punt-economia-solidaria article.node-punt-economia-solidaria #gen
   font-size: 20px;
   margin: 0 15px;
 }
-/* line 737, ../sass/_punt_full.scss */
+/* line 740, ../sass/_punt_full.scss */
 body.node-type-punt-economia-solidaria article.node-punt-economia-solidaria #general-wrapper .filainf #dreta-inf #xxss .fb-wrapper a:before {
   content: ' ';
   display: inline-block;
@@ -4959,11 +4963,11 @@ body.node-type-punt-economia-solidaria article.node-punt-economia-solidaria #gen
   padding-left: 0;
   background-position: 0px -73px;
 }
-/* line 745, ../sass/_punt_full.scss */
+/* line 748, ../sass/_punt_full.scss */
 body.node-type-punt-economia-solidaria article.node-punt-economia-solidaria #general-wrapper .filainf #dreta-inf #xxss .fb-wrapper a:hover:before {
   background-position: 0px 0px;
 }
-/* line 751, ../sass/_punt_full.scss */
+/* line 754, ../sass/_punt_full.scss */
 body.node-type-punt-economia-solidaria article.node-punt-economia-solidaria #general-wrapper .filainf #dreta-inf #xxss .gp-wrapper a {
   color: #c4af94;
   font-family: 'titlight';
@@ -4973,7 +4977,7 @@ body.node-type-punt-economia-solidaria article.node-punt-economia-solidaria #gen
   font-size: 20px;
   margin: 0 15px;
 }
-/* line 756, ../sass/_punt_full.scss */
+/* line 759, ../sass/_punt_full.scss */
 body.node-type-punt-economia-solidaria article.node-punt-economia-solidaria #general-wrapper .filainf #dreta-inf #xxss .gp-wrapper a:before {
   content: ' ';
   display: inline-block;
@@ -4988,11 +4992,11 @@ body.node-type-punt-economia-solidaria article.node-punt-economia-solidaria #gen
   padding-left: 0;
   background-position: -102px -73px;
 }
-/* line 764, ../sass/_punt_full.scss */
+/* line 767, ../sass/_punt_full.scss */
 body.node-type-punt-economia-solidaria article.node-punt-economia-solidaria #general-wrapper .filainf #dreta-inf #xxss .gp-wrapper a:hover:before {
   background-position: -102px 0px;
 }
-/* line 770, ../sass/_punt_full.scss */
+/* line 773, ../sass/_punt_full.scss */
 body.node-type-punt-economia-solidaria article.node-punt-economia-solidaria #general-wrapper .filainf #dreta-inf #xxss .tw-wrapper a {
   color: #c4af94;
   font-family: 'titlight';
@@ -5002,7 +5006,7 @@ body.node-type-punt-economia-solidaria article.node-punt-economia-solidaria #gen
   font-size: 20px;
   margin: 0 15px;
 }
-/* line 775, ../sass/_punt_full.scss */
+/* line 778, ../sass/_punt_full.scss */
 body.node-type-punt-economia-solidaria article.node-punt-economia-solidaria #general-wrapper .filainf #dreta-inf #xxss .tw-wrapper a:before {
   content: ' ';
   display: inline-block;
@@ -5017,11 +5021,11 @@ body.node-type-punt-economia-solidaria article.node-punt-economia-solidaria #gen
   padding-left: 0;
   background-position: -15px -73px;
 }
-/* line 783, ../sass/_punt_full.scss */
+/* line 786, ../sass/_punt_full.scss */
 body.node-type-punt-economia-solidaria article.node-punt-economia-solidaria #general-wrapper .filainf #dreta-inf #xxss .tw-wrapper a:hover:before {
   background-position: -15px 0px;
 }
-/* line 793, ../sass/_punt_full.scss */
+/* line 796, ../sass/_punt_full.scss */
 body.node-type-punt-economia-solidaria article.node-punt-economia-solidaria #general-wrapper .filainf #dreta-inf #blogs .view .views-row {
   margin-bottom: 18px;
   text-align: center;
@@ -5070,11 +5074,11 @@ body.node-type-punt-economia-solidaria article.node-punt-economia-solidaria #gen
   color: #ffffff;
   padding: 5px 0;
 }
-/* line 796, ../sass/_punt_full.scss */
+/* line 799, ../sass/_punt_full.scss */
 body.node-type-punt-economia-solidaria article.node-punt-economia-solidaria #general-wrapper .filainf #dreta-inf #blogs .view .views-row .blog-top {
   padding: 18px;
 }
-/* line 805, ../sass/_punt_full.scss */
+/* line 808, ../sass/_punt_full.scss */
 body.node-type-punt-economia-solidaria article.node-punt-economia-solidaria #general-wrapper .filainf #dreta-inf #blogs .field-name-field-imatge-portada {
   display: none;
 }
@@ -5337,15 +5341,19 @@ body.node-type-entrada-de-blog #main #content #sec-col .view-id-xxss_del_node.vi
 /*Estils pel llistat de blogs*/
 @media all and (min-width: 960px) {
   /* line 46, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
-  .page-blogs .view-llistat-de-blogs:before, .page-blogs .view-llistat-de-blogs:after {
+  .page-taxonomy .view-llistat-de-blogs:before, .page-taxonomy .view-llistat-de-blogs:after,
+  .page-blogs .view-llistat-de-blogs:before,
+  .page-blogs .view-llistat-de-blogs:after {
     content: "";
     display: table;
   }
   /* line 50, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+  .page-taxonomy .view-llistat-de-blogs:after,
   .page-blogs .view-llistat-de-blogs:after {
     clear: both;
   }
-  /* line 14, ../sass/_blog_list.scss */
+  /* line 15, ../sass/_blog_list.scss */
+  .page-taxonomy .view-llistat-de-blogs .views-row.views-row-odd,
   .page-blogs .view-llistat-de-blogs .views-row.views-row-odd {
     clear: left;
     float: left;
@@ -5360,7 +5368,8 @@ body.node-type-entrada-de-blog #main #content #sec-col .view-id-xxss_del_node.vi
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 18, ../sass/_blog_list.scss */
+  /* line 19, ../sass/_blog_list.scss */
+  .page-taxonomy .view-llistat-de-blogs .views-row.views-row-even,
   .page-blogs .view-llistat-de-blogs .views-row.views-row-even {
     float: left;
     width: 25%;
