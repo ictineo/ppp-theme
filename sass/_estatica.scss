@@ -1,0 +1,409 @@
+/*ESTÀTIQUES A MIDA*/
+
+.node-type-page article {
+  background-color: #f6f6f1;
+  padding: 20px;
+  .orange {
+    color: $naranja;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+}
+.node-type-page .field-name-body .tit_anchor.desti {
+  color: #ff9839;
+  display: block;
+  font-family: 'titsemibold_upright';
+  font-size: 15px;
+  letter-spacing: 0.6px;
+  line-height: 29px;
+  margin-bottom: 12px;
+  width: 100%;
+  text-transform: uppercase;
+  text-align:center;
+}
+.node-type-page {
+  .field-name-body {
+    .dinamic,
+    .dinamic p,
+    .cos,
+    .cos p {
+      font-size: 16px;
+      line-height: 20px;
+      margin-top: 0px;
+    }
+    .tit_seccio {
+      color: #1fcba9;
+      font-family: 'titregular';
+      line-height: 16px;
+      font-size: 18px;
+      padding-bottom: 16px;
+      margin-bottom: 5px;
+    }
+    .adress {
+      font-size: 14px;
+    }
+    .col1,
+    .col2,
+    .col3 {
+      width: 27%;
+      float: left;
+      padding-left: 60px;
+    }
+    ul {
+      list-style: none;
+      margin-bottom: 30px;
+    }
+    .criteris li {
+      font-family: 'titbold';
+      /*color: #ff9839;*/
+      font-size: 14px;
+      line-height: 40px;
+    }
+    .sectors li label {
+      display: inline-block;
+      color: #ff9839;
+    }
+    .sectors li {
+      font-family: 'titbold';
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 20px;
+    }  
+  }
+}
+li#a:before {
+  content: ' ';
+  display: inline-block;
+  background:url('../images/icons/criteris/CprT.png') no-repeat;
+  width: 15px;
+  height: 18px;
+  padding-right: 10px
+}
+li#b:before {
+  content: ' ';
+  display: inline-block;
+  background:url('../images/icons/criteris/CcjT.png') no-repeat;
+  width: 15px;
+  height: 18px;
+  padding-right: 10px
+}
+li#c:before {
+  content: ' ';
+  display: inline-block;
+  background:url('../images/icons/criteris/CtrT.png') no-repeat;
+  width: 15px;
+  height: 18px;
+  padding-right: 10px
+}
+li#d:before {
+  content: ' ';
+  display: inline-block;
+  background:url('../images/icons/criteris/CisT.png') no-repeat;
+  width: 15px;
+  height: 18px;
+  padding-right: 10px
+}
+li#e:before {
+  content: ' ';
+  display: inline-block;
+  background:url('../images/icons/criteris/CinT.png') no-repeat;
+  width: 15px;
+  height: 18px;
+  padding-right: 10px
+}
+li#f:before {
+  content: ' ';
+  display: inline-block;
+  background:url('../images/icons/criteris/CxaT.png') no-repeat;
+  width: 15px;
+  height: 18px;
+  padding-right: 10px
+}
+li#g:before {
+  content: ' ';
+  display: inline-block;
+  background:url('../images/icons/criteris/CbeT.png') no-repeat;
+  width: 15px;
+  height: 18px;
+  padding-right: 10px
+}
+li#h:before {
+  content: ' ';
+  display: inline-block;
+  background:url('../images/icons/criteris/CsoT.png') no-repeat;
+  width: 15px;
+  height: 18px;
+  padding-right: 10px
+}
+li#i:before {
+  content: ' ';
+  display: inline-block;
+  background:url('../images/icons/criteris/CgrT.png') no-repeat;
+  width: 15px;
+  height: 18px;
+  padding-right: 10px
+}
+li#j:before {
+  content: ' ';
+  display: inline-block;
+  background:url('../images/icons/criteris/CeeT.png') no-repeat;
+  width: 15px;
+  height: 18px;
+  padding-right: 10px
+}
+li#k:before {
+  content: ' ';
+  display: inline-block;
+  background:url('../images/icons/criteris/CfsT.png') no-repeat;
+  width: 15px;
+  height: 18px;
+  padding-right: 10px
+}
+li#l:before {
+  content: ' ';
+  display: inline-block;
+  background:url('../images/icons/criteris/CdpT.png') no-repeat;
+  width: 15px;
+  height: 18px;
+  padding-right: 10px
+}
+li#m:before {
+  content: ' ';
+  display: inline-block;
+  background:url('../images/icons/criteris/CegT.png') no-repeat;
+  width: 15px;
+  height: 18px;
+  padding-right: 10px
+}
+li#n:before {
+  content: ' ';
+  display: inline-block;
+  background:url('../images/icons/criteris/CdiT.png') no-repeat;
+  width: 15px;
+  height: 18px;
+  padding-right: 10px
+}
+li#o:before {
+  content: ' ';
+  display: inline-block;
+  background:url('../images/icons/criteris/CccT.png') no-repeat;
+  width: 15px;
+  height: 18px;
+  padding-right: 10px
+}
+
+li#p:before {
+  content: ' ';
+  display: inline-block;
+  background:url('../images/map/hab.png') no-repeat;
+  width: 34px;
+  height: 47px;
+  padding-right: 10px
+}
+li#q:before {
+  content: ' ';
+  display: inline-block;
+  background:url('../images/map/ves.png') no-repeat;
+  width: 34px;
+  height: 47px;
+  padding-right: 10px
+}
+li#r:before {
+  content: ' ';
+  display: inline-block;
+  background:url('../images/map/ali.png') no-repeat;
+  width: 34px;
+  height: 47px;
+  padding-right: 10px
+}
+li#s:before {
+  content: ' ';
+  display: inline-block;
+  background:url('../images/map/cul.png') no-repeat;
+  width: 34px;
+  height: 47px;
+  padding-right: 10px
+}
+li#t:before {
+  content: ' ';
+  display: inline-block;
+  background:url('../images/map/edu.png') no-repeat;
+  width: 34px;
+  height: 47px;
+  padding-right: 10px
+}
+li#u:before {
+  content: ' ';
+  display: inline-block;
+  background:url('../images/map/tec.png') no-repeat;
+  width: 34px;
+  height: 47px;
+  padding-right: 10px
+}
+li#v:before {
+  content: ' ';
+  display: inline-block;
+  background:url('../images/map/cur.png') no-repeat;
+  width: 34px;
+  height: 47px;
+  padding-right: 10px
+}
+li#w:before {
+  content: ' ';
+  display: inline-block;
+  background:url('../images/map/oci.png') no-repeat;
+  width: 34px;
+  height: 47px;
+  padding-right: 10px
+}
+li#x:before {
+  content: ' ';
+  display: inline-block;
+  background:url('../images/map/fin.png') no-repeat;
+  width: 34px;
+  height: 47px;
+  padding-right: 10px
+}
+li#y:before {
+  content: ' ';
+  display: inline-block;
+  background:url('../images/map/ase.png') no-repeat;
+  width: 34px;
+  height: 47px;
+  padding-right: 10px
+}
+li#z:before {
+  content: ' ';
+  display: inline-block;
+  background:url('../images/map/log.png') no-repeat;
+  width: 34px;
+  height: 47px;
+  padding-right: 10px
+}
+li#zz:before {
+  content: ' ';
+  display: inline-block;
+  background:url('../images/map/xar.png') no-repeat;
+  width: 34px;
+  height: 47px;
+  padding-right: 10px
+}
+.node-type-page .field-name-body .sectors,
+.node-type-page .field-name-body .territ {
+  clear: both;
+}
+.node-type-page .field-name-body .menu_intern {
+  margin-bottom: 20px;
+}
+.node-type-page .field-name-body .menu_intern a {
+  color: #1fcba9;
+  font-family: 'titregular';
+  font-size: 14px;
+}
+.node-type-page .field-name-body .menu_intern a:hover {
+  color: #2c2a28;
+}
+
+.node-type-page .field-name-body .setem,
+.node-type-page .field-name-body .xes {
+  width: 40%;
+  float: left;
+  padding-left: 90px;
+  margin-top: 20px;
+}
+
+.node-type-page .field-name-body {
+  .suport,
+  .credits,
+  .contact {
+    clear: both;
+    text-align: center;
+    padding: 30px 90px 0;
+    .cos {
+      padding-top: 20px;
+      border-top: 1px solid $marro_border;
+    }
+  }
+}
+
+.node-type-page .field-name-body .setem .tit_seccio:before {
+  content: '';
+  display: block;
+  background: url('../../../../default/files/tema/setem.png') 0 -10px no-repeat;
+  width: 80px;
+  height: 60px;
+}
+.node-type-page .field-name-body .xes .tit_seccio:before {
+  content: '';
+  display: block;
+  background: url('../../../../default/files/tema/xes.png') 0 1px no-repeat;
+  width: 80px;
+  height: 60px;
+}
+.node-type-page .field-name-body a {
+  color: #1fcba9;
+}
+.node-type-page .field-name-body a:hover {
+  color: #2c2a28;
+}
+.node-type-page .field-name-body .contact .dinamic #col1 {
+  margin-top: 10px;
+}
+.node-type-page .field-name-body .credits label {
+  display: inline-block;
+  color: #ff9839;
+}
+.node-type-page .field-name-body .suport {
+  text-align: right;
+
+}
+.node-type-page .field-name-body {
+  .credits,
+  .suport {
+    $zen-column-count: 3;
+    @include zen-grid-container;
+    .logoa {
+      @include zen-grid-item(1,1);
+    }
+    .logob {
+      @include zen-grid-item(1,2);
+    }
+    .logoc {
+      @include zen-grid-item(1,3);
+    }
+  }
+}
+.node-type-page .field-name-body {
+  .suport,
+  .credits {
+    .orange {
+      margin-bottom: 30px;
+    }
+    p {
+    }
+    .logob,
+    .logoc,
+    .logoa {
+      text-align:center;
+    }
+  }
+  .credits {
+    .logo1,
+    .logo2,
+    .logo3 {
+      min-height: 100px;
+      img {
+        margin-top: 30px;
+      }
+    }
+    .logo3 {
+      img {
+        margin-top: 0px;
+      }
+    }
+  }
+}
+.node-type-page .field-name-body .imatge {
+margin-top: 10px;
+}
+
