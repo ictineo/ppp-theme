@@ -16,6 +16,14 @@
 // To understand behaviors, see https://drupal.org/node/756722#behaviors
 Drupal.behaviors.ppp_blocs_portada = {
   attach: function(context, settings) {
+    $(".form-submit").click(function(){//Muli--Per fer que al pulsar intro en el input de cerques o en el botó de buscar es centri l'scroll en el mapa
+      var cerca=$("#edit-s1").val().length;
+      if(cerca!=0){
+        $("html, body").animate({
+          scrollTop:($("#map-wrapper").offset().top-50)
+        }, 500);        
+      }
+    });
     if(jQuery('body').hasClass('front')) {
       jQuery('#content .dalt .bloc3 .view-ultims-comentaris.view-id-ultims_comentaris').hide();
       jQuery('#content .dalt .bloc3 .view-portada-ultims-usuaris.view-id-portada_ultims_usuaris').hide();

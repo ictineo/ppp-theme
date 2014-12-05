@@ -450,12 +450,15 @@
           #filter-1 {
             @include zen-grid-item(4,1);
             @include zen-clear();
+            position:relative; //MULI AFEGEIX
           }
           #filter-2 {
             @include zen-grid-item(4,5);
+            position:relative; //MULI AFEGEIX
           }
           #filter-3 {
             @include zen-grid-item(4,9);
+            position:relative; //MULI AFEGEIX
           }
           .filter {
             height: 230px;
@@ -476,19 +479,37 @@
                 position: absolute;
                 display: block;
                 left: 50%;
-                top: 60px;
+                top: 62px;
                 width: 0px;
                 height: 0px;
                 border: 5px solid transparent;
                 border-top: 5px solid $fondo;
               }
               &:before {
-                top: 62px;
+                top: 65px;
                 border: 5px solid transparent;
                 border-top: 5px solid $marro_clar;
               }
             }
+            //MULI AFEGEIX
+          .descfilter{
+            color:#a2a2a2;
+            padding-top: 15px;
+            padding-bottom: 0px !important;
+            font-size: 0.7em;
+            position: absolute;
+            left: 25%;
           }
+          .infofilter{
+            color: #FFF;
+            background-color: #D2D2D2;
+            border-radius: 100%;
+            margin-top: -2px;
+            margin-left: 7px;
+            font-size: 0.5em;
+            padding: 0px 6.5px 0px 6px;
+          }
+          }                   
           #filter-1,
           #filter-3 {
             .filter-label {
@@ -881,6 +902,26 @@
                 width: 100%;
               }
             }
+          }
+        }
+      }
+      & > .wrapper-news {//grid bloc subscripció butlletí
+        $zen-column-count: 12;
+        $zen-gutter-width: 16px;
+        $zen-auto-include-item-base: true;
+        @include zen-grid-container();
+        .news_title {
+          @include zen-grid-item(6,1);
+        }
+        .news_body {
+          @include zen-grid-item(12,1);
+          $zen-column-count:2;
+          @include zen-grid-container;
+          p {
+            @include zen-grid-item(1,1);
+          }
+          form.simplenews-subscribe {
+            @include zen-grid-item(1,2);
           }
         }
       }

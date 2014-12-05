@@ -146,6 +146,11 @@
        <div class="wrapper-blog">
           <?php print views_embed_view('portada_ultims_blogs','block'); ?>
        </div>
+       <div class="wrapper-news">
+        <?php $block = module_invoke('simplenews', 'block_view', '2828');?>
+           <div class="news_title"><?php print render($block['subject']);?></div>
+           <div class="news_body"><?php print render($block['content']);?></div>
+       </div>
         <?php drupal_add_js(drupal_get_path('theme', 'pamapam') . '/js/mapa.js'); ?>
         <?php drupal_add_js(drupal_get_path('theme', 'pamapam') . '/js/blocs_portada.js'); ?>
         <?php drupal_add_js(drupal_get_path('theme', 'pamapam') . '/js/blogs_portada.js'); ?>
