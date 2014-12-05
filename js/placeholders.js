@@ -16,7 +16,7 @@
 // To understand behaviors, see https://drupal.org/node/756722#behaviors
 Drupal.behaviors.ppp_placeholders = {
   attach: function(context, settings) {
-    jQuery('#user-pass input, #user-register-form input, #user-login input').each(function () {
+    jQuery('#user-pass input, #user-register-form input, #user-login input, #edit-mail input').each(function () {
       var place = jQuery('label[for=' + jQuery(this).attr('id') + ']').text();
       jQuery('label[for=' + jQuery(this).attr('id') + ']').hide();
       jQuery(this).attr('placeholder', place);

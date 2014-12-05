@@ -154,6 +154,7 @@
         <?php drupal_add_js(drupal_get_path('theme', 'pamapam') . '/js/mapa.js'); ?>
         <?php drupal_add_js(drupal_get_path('theme', 'pamapam') . '/js/blocs_portada.js'); ?>
         <?php drupal_add_js(drupal_get_path('theme', 'pamapam') . '/js/blogs_portada.js'); ?>
+        <?php drupal_add_js(drupal_get_path('theme', 'pamapam') . '/js/placeholders.js'); ?>
         <?php else: ?>
         <?php print render($page['content']); ?>
       <?php endif; ?>

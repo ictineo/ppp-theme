@@ -911,17 +911,18 @@
         $zen-auto-include-item-base: true;
         @include zen-grid-container();
         .news_title {
-          @include zen-grid-item(6,1);
+          @include zen-grid-item(5,2);
         }
         .news_body {
+          @include zen-clear;
           @include zen-grid-item(12,1);
-          $zen-column-count:2;
+          $zen-column-count:12;
           @include zen-grid-container;
           p {
-            @include zen-grid-item(1,1);
+            @include zen-grid-item(5,2);
           }
           form.simplenews-subscribe {
-            @include zen-grid-item(1,2);
+            @include zen-grid-item(4,8);
           }
         }
       }
@@ -1132,6 +1133,30 @@
             @include blog;
             .blog-top {
               min-height: 155px;
+            }
+          }
+        }
+      }
+      .wrapper-news {
+        background-color: $gris_blau;
+        margin-top: 30px;
+        padding: 20px 0;
+        border: 1px solid $naranja;
+        .news_title {
+          @include h1;
+          color: $naranja;
+        }
+        .news_body {
+          p {
+            @include semi;
+            margin-top: 8px;
+            margin-bottom: 5px;
+          }
+          form.simplenews-subscribe {
+            position: absolute;
+            bottom: 100px;
+            .form-item.form-type-textfield.form-item-mail {
+              display: inline;
             }
           }
         }
