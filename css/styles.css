@@ -5235,7 +5235,7 @@ body.node-type-entrada-de-blog #main #content h2.comments__form-title {
   width: 96%;
   text-align: center;
   line-height: 60px;
-  padding: 0px;
+  padding: 1px;
   margin: 0 0 20px 0;
   border-bottom: 2px solid rgba(196, 175, 148, 0.6);
   position: relative;
